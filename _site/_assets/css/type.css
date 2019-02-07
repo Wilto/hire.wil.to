@@ -1,0 +1,188 @@
+/* Adelle Sans */
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('/_assets/fonts/AdelleSans-Regular.woff2') format('woff2'),
+        url('/_assets/fonts/AdelleSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('/_assets/fonts/AdelleSans-Bold.woff2') format('woff2'),
+        url('/_assets/fonts/AdelleSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('/_assets/fonts/AdelleSans-Light.woff2') format('woff2'),
+        url('/_assets/fonts/AdelleSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Tiempos Text */
+@font-face {
+    font-family: 'Tiempos';
+    src: url('/_assets/fonts/TiemposTextWeb-Regular.woff2') format('woff2'),
+        url('/_assets/fonts/TiemposTextWeb-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tiempos';
+    src: url('/_assets/fonts/TiemposTextWeb-RegularItalic.woff2') format('woff2'),
+        url('/_assets/fonts/TiemposTextWeb-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Tiempos';
+    src: url('/_assets/fonts/TiemposTextWeb-Semibold.woff2') format('woff2'),
+        url('/_assets/fonts/TiemposTextWeb-Semibold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Tiempos';
+    src: url('/_assets/fonts/TiemposTextWeb-SemiboldItalic.woff2') format('woff2'),
+        url('/_assets/fonts/TiemposTextWeb-SemiboldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Tiempos Headline */
+@font-face {
+    font-family: 'TiemposHed';
+    src: url('/_assets/fonts/TiemposHeadline-Regular.woff2') format('woff2'),
+        url('/_assets/fonts/TiemposHeadline-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+p.lede {
+    font-family: AdelleSans, sans-serif;
+    font-weight: 300;
+    font-size: 5.65vw;
+    line-height: 1.3;
+    margin-top: .25em;
+    padding-right: 2em;
+    max-width: 38em;
+    color: #10093b;
+}
+@media( min-width: 27em ) {
+    p.lede {
+        font-size: 1.515em;
+    }
+}
+@media( min-width: 85em ) {
+    p.lede {
+        font-size: 1.785vw;
+    }
+}
+@media( min-width: 96.25em ) {
+    p.lede {
+        font-size: 1.7em;
+    }
+}
+
+.sublede p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.525;
+}
+@media( min-width: 31.5em ) {
+    .sublede p {
+       font-size: 3.5vw;
+   }
+}
+
+@media( min-width: 37.25em ) {
+    .sublede p {
+       font-size: 1.3em;
+   }
+}
+
+p {
+    font-family: Tiempos, serif;
+    font-size: .95em;
+    line-height: 1.425;
+    color:#10093b;
+    max-width: 45em;
+}
+
+@media( min-width: 30em ) {
+    p {
+        font-size: 3.2vw;
+    }
+}
+@media( min-width: 37em ) {
+    p {
+        font-size: 1.18em;
+    }
+}
+
+
+/* Gradient background effect */
+.txt-shaded {
+    background: linear-gradient(-175deg,#cb4335 0%,#10093b 65%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,.15);
+}
+
+/* Hed/Subhed */
+h1, h2, h3, h4 {
+    font-family: AdelleSans, sans-serif;
+    margin: 1.75em 0 0 0;
+    line-height: 1.15;
+    display: inline-block;
+    font-size:;
+    color: #10093b ;
+    font-weight: bold;
+}
+
+.section-hed {
+    font-size: 1.4em;
+}
+@media( min-width: 35em ) {
+    .section-hed {
+        font-size: 4vw;
+    }
+}
+@media( min-width: 42.5em ) {
+    .section-hed {
+        font-size: 1.7em;
+    }
+}
+h1.hed {
+    font-family: TiemposHed, serif;
+    font-size: 8.2vw;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: .25em 0 .25em 0;
+}
+
+
+@media( min-width: 30em ) {
+    h1.hed {
+        font-size: 2.475em;
+    }
+}
+@media( min-width: 85em ) {
+    h1.hed {
+        font-size: 2.925vw;
+    }
+}
+@media( min-width: 109.375em ) {
+    h1.hed {
+        font-size: 3.19895625em;
+    }
+}
+
+@media( min-width: 45em ) {
+    h1.hed span {
+        white-space: nowrap;
+    }
+}

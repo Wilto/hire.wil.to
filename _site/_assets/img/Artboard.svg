@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="208px" height="207px" viewBox="0 0 208 207" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.4117 0.353 207.0587 0.353 207.0587 206.9999 0.4117 206.9999"></polygon>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-10">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Clip-9"></g>
+            <path d="M207.0587,103.6769 C207.0587,160.7399 160.7997,206.9999 103.7357,206.9999 C46.6717,206.9999 0.4117,160.7399 0.4117,103.6769 C0.4117,46.6129 46.6717,0.3529 103.7357,0.3529 C160.7997,0.3529 207.0587,46.6129 207.0587,103.6769" id="Fill-8" fill="#12073F" mask="url(#mask-2)"></path>
+        </g>
+        <polygon id="Fill-11" fill="#FFFFFF" points="101.4054 77.63 80.8784 77.63 93.3594 99.657 87.7804 109.469 69.6144 77.63 49.0874 77.63 87.6654 145.989 87.7444 145.852 87.8224 145.989 103.6674 117.848 119.6144 145.989 129.9944 127.734"></polygon>
+        <polygon id="Fill-13" fill="#EF4136" points="137.8229 77.6466 125.5509 99.2296 146.2009 99.2296 158.3839 77.8046"></polygon>
+    </g>
+</svg>
