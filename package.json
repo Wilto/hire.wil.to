@@ -1,0 +1,26 @@
+{
+  "name": "Hire Wilto!",
+  "version": "0.0.1",
+  "description": "Do it, chicken.",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Wilto/hire.wil.to.git"
+  },
+  "author": {
+    "name": "Mat Marquis",
+    "email": "mat@matmarquis.com",
+    "url": "http://matmarquis.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wilto/hire.wil.to/issues"
+  },
+  "homepage": "https://hire.wil.to",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1"
+  }
+}
