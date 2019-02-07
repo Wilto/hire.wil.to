@@ -114,9 +114,6 @@ main {
 			display: grid;
 			grid-template-columns: repeat( 15, 1fr );
 		}
-		.body > * {
-			border: 1px solid red;
-		}
 		.body .head {
 			grid-column: 2 / span 12;
 		}
