@@ -25,3 +25,20 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+a {
+	background: linear-gradient(-175deg,#cb4335 0%,#10093b 95%);
+	background-clip: border-box;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #12073f;
+	transition: color .15s linear, -webkit-text-fill-color .15s linear, text-decoration-color .5s linear;
+	text-decoration: underline;
+	text-decoration-color: #12073f;
+}
+a:hover {
+	-webkit-text-fill-color: #cb4335;
+	text-decoration-color: #cb4335;
+	color: #cb4335;
+	cursor: pointer;
+}

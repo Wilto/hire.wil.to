@@ -1,11 +1,23 @@
 ---
 pageClass: work
-title: "I’ve done some websites; whatever."
-img: jsforwd.png
+title: "I’ve helped build some websites."
+img: work.png
+order: 1
+fullbleed: true
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+I’m a developer that heavily skews “designer.” From design to implementation, I believe that a good layout is a flexible, durable, and maintainable one.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+I’ve helped clients like [Rolling Stone](https://rollingstone.com) with their performance concerns, clients like [Axios](https://axios.com) and [Microsoft](https://www.microsoft.com/en-us/mwf) with their accessibility concerns, and Amazon’s [Pillpack](https://www.pillpack.com/) with—well, building their website.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+### Responsive Web Design 
+
+I’m incredibly fortunate to have played a small part in the history of Responsive Web Design, from eavesdropping on the earliest discussions of the responsive [Boston Globe](https://bostonglobe.com) project—all the way back in 2011—to leading the addition of responsive image features to the HTML5 specification, native browser implementations, and major CMSes.
+
+### Front-End Performance
+
+I’ve had the privilege of traveling the world speaking about front-end performance, at conferences like An Event Apart and Smashing. I’ve worked with organizations large and small not just to audit, identify, and help fix their performance pain points, but to establish workflows, development habits, and support systems that allow those improvements—and their results—to persist long after I’m gone.
+
+### Accessibility
+
+I firmly believe that accessibility isn’t an add-on, a line item, or an ticket languishing in an issue tracker for “if we have time at the end.” It’s a persistent consideration through every step in the creation of a site—from content, to wireframes, to markup, to the final product. In the years that followed my accessibility work on the [jQuery UI and jQuery Mobile teams](https://jquery.org/team/), I’ve helped guide a number of organizations through the process of prioritizing accessibility both technically _and_ culturally.

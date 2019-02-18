@@ -4,8 +4,10 @@ body {
 	position: relative;
 	min-width: 100%;
 	min-height: 100vh;
+	height: auto;
 	background: linear-gradient(-7.5deg, #f1f1f1 60%, #fff);
 	border-top: .3em solid  #12073f;
+	overflow-x: hidden;
 }
 
 @media( min-width: 65em ) {
@@ -34,6 +36,7 @@ main {
 	padding: 5%;
 	max-width: 90em;
 	margin: 0 auto;
+
 }
 
 .w-logo {
@@ -47,6 +50,12 @@ main {
 
 .sub {
 	margin: 5vmin 0 5em 0;
+	clear: both;
+}
+.sub:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 .sub:first-of-type { 
 	margin-top: 0;
@@ -55,36 +64,56 @@ main {
 .sub img {
 	display: block;
 	margin: 1.5em auto 1em auto;
-	max-width: 100%;
-}
-
-@media( max-width: 46.8125em ) {
-.sub .copy {
-	display: block;
-	margin-top: -4em;
-	position: relative;
-	padding-top: 2.5em;
-}
-.sub .copy:before {
-	content: "";
-	display: block;
 	width: 100%;
-	top: -3em;
-	height: 8em;
-	position: absolute;
-	background: linear-gradient(-180deg, transparent, #f1f1f1 80%);
-	mask-type: 
+	max-width: 25em;
+	clear: both;
 }
-.sub .copy p {
-	position: relative;
-	z-index: 2;
-}
+@media( min-width: 31em ) {
+	.sub img {
+		width: auto;
+		max-width: 25em;
+	}
 }
 
+.sub img.fullbleed {
+	max-width: 130%;
+	width: 130%;
+	margin-left: -15%;
+}
 @media( min-width: 46.875em ) {
 	.sub img {
 		margin: 1.5em auto 1em 5%;
 		float: right;
+	}
+	.sub img.fullbleed {
+		width: auto;
+		margin-left: 2.5%;
+		max-width: 45em !important;
+		margin-right: -20em;
+	}
+}
+
+
+@media( max-width: 46.8125em ) {
+	.sub img+.copy {
+		display: block;
+		margin-top: -4em;
+		position: relative;
+		padding-top: 2.5em;
+	}
+	.sub img+.copy:before {
+		content: "";
+		display: block;
+		width: 120%;
+		top: -3em;
+		left: -10%;
+		height: 8em;
+		position: absolute;
+		background: linear-gradient(-180deg, transparent, #f1f1f1 80%);
+	}
+	.sub .copy p {
+		position: relative;
+		z-index: 2;
 	}
 }
 
@@ -94,8 +123,8 @@ main {
 			shape-margin: 5%;
 			z-index: -1;
 		}
-		.sub.sub-books img { shape-outside: url(/_assets/img/jsforwd.png); }
-		.sub.sub-books img { shape-outside: url(/_assets/img/jsforwd.png); }
+		.sub.sub-books img { shape-outside: url(/_assets/img/books.png); }
+		.sub.sub-work img { shape-outside: url(/_assets/img/work.png); }
 	}
 }
 
@@ -106,7 +135,6 @@ main {
 			grid-row: 1 / -1;
 			align-self: center;
 			max-width: 25em;
-			margin-right: 1em;
 		}
 	}
 	@media( min-width: 80em ) {
@@ -115,7 +143,7 @@ main {
 			grid-template-columns: repeat( 15, 1fr );
 		}
 		.body .head {
-			grid-column: 2 / span 12;
+			grid-column: 2 / span 13;
 		}
 		.sub {
 			display: grid;
@@ -124,11 +152,15 @@ main {
 			grid-template-rows: auto auto;
 			grid-gap: 0 3.5%;
 		}
+		.sub.sub-busy {
+			grid-column: 3 / span 13; 
+		}
 		.sub:nth-of-type(odd) { 
 			grid-column: 3 / span 13;
 		}
 		.sub .section-head {
 			grid-column: 1 / 1;
+			align-self: flex-end;
 		}
 		.sub .copy {
 			grid-column: 1 / 2;
@@ -162,5 +194,6 @@ main {
 		.sub:nth-of-type(odd) .copy { 
 			grid-column: 2 / -1;
 		}
+		.sub:nth-of-type(odd) {
 	}
 }

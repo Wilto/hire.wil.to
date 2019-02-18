@@ -1,12 +1,14 @@
 ---
 pageClass: books
-title: "I wrote a couple of books."
-img: jsforwd.png
+title: "I do a lot of writing."
+order: 2
+img: books.png
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A few years ago I wrote [JavaScript for Web Designers](https://abookapart.com/products/javascript-for-web-designers). It’s paced for anyone taking their first steps into the world of JavaScript development.
+
+I wrote [Image Performance](https://abookapart.com/products/image-performance) just last year. It’s a deep-dive into a subject that’s easy to take for granted, but difficult to master: “putting images on the web.” It covers everything from the ins and outs of image formats and compression methods to responsive image markup to automation
+
+Before writing two books of my own, I wrote the _Robust, Responsible, Responsive Web Design_ chapter of [Smashing Book 4](https://www.smashingmagazine.com/smashing-book-4-new-perspectives/), and two chapters on JavaScript for [Learning Web Design](https://www.learningwebdesign.com/).
+
+Fingers crossed, maybe someday I’ll add [a cookbook](https://wiltomakesfood.com) to the list.

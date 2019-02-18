@@ -3,10 +3,13 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addCollection("sections", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
 			return item.inputPath.match(/^\.\/_src\/sections\//) !== null;
+		}).sort(function(a, b) {
+			return b.data.order - a.data.order;
 		});
 	});
 
 	eleventyConfig.addPassthroughCopy("_src/_assets");
+	eleventyConfig.addPassthroughCopy("_src/sw.js");
 
 	return {
 		templateFormats: [

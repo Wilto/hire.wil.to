@@ -100,14 +100,14 @@ p.lede {
 
 @media( min-width: 37.25em ) {
     .sublede p {
-       font-size: 1.3em;
+       font-size: 1.35em;
    }
 }
 
 p {
     font-family: Tiempos, serif;
     font-size: .95em;
-    line-height: 1.425;
+    line-height: 1.55;
     color:#10093b;
     max-width: 45em;
 }
@@ -119,7 +119,7 @@ p {
 }
 @media( min-width: 37em ) {
     p {
-        font-size: 1.18em;
+        font-size: 1.1em;
     }
 }
 
@@ -145,6 +145,11 @@ h1, h2, h3, h4 {
 
 .section-hed {
     font-size: 1.4em;
+    padding-bottom: .5em;
+    float: left;
+}
+.sub p {
+    clear: left;
 }
 @media( min-width: 35em ) {
     .section-hed {
@@ -154,6 +159,11 @@ h1, h2, h3, h4 {
 @media( min-width: 42.5em ) {
     .section-hed {
         font-size: 1.7em;
+    }
+}
+@media( min-width: 80em ) {
+    .section-hed {
+        padding-bottom: 0;
     }
 }
 h1.hed {
@@ -185,4 +195,24 @@ h1.hed {
     h1.hed span {
         white-space: nowrap;
     }
+}
+
+ul,
+ol {
+    list-style: none;
+    font-size: 1.2em;
+    font-family: AdelleSans, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+ul li,
+ol li {
+    margin: .25em 0;
+    padding-left: .5em;
+}
+ul li:before,
+ol li:before {
+    content: "•";
+    color: #cb4335;
+    margin-right: 1em;
 }
