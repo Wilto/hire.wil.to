@@ -127,8 +127,7 @@ p {
 /* Gradient background effect */
 .txt-shaded {
     background: linear-gradient(-175deg,#cb4335 0%,#10093b 65%);
-    background-clip: border-box;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: rgba(0,0,0,.15);
 }
 

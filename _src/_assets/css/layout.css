@@ -6,9 +6,7 @@ body {
 	min-height: 100vh;
 	height: auto;
 	background: linear-gradient(-7.5deg, #f1f1f1 60%, #fff);
-	border-top: .3em solid  #12073f;
-	overflow: hidden;
-}
+	border-top: .3em solid  #12073f;}
 
 @media( min-width: 65em ) {
 	body {
@@ -36,7 +34,7 @@ main {
 	padding: 5%;
 	max-width: 90em;
 	margin: 0 auto;
-
+	overflow: hidden;
 }
 
 .w-logo {
