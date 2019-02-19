@@ -27,7 +27,7 @@ img {
 }
 
 a {
-	color: #12073f;
+	color: #6d252e;
 	transition: color .15s linear, -webkit-text-fill-color .15s linear, text-decoration-color .5s linear;
 	text-decoration: underline;
 	border-bottom: 1px solid  #12073f;
@@ -37,21 +37,6 @@ a:hover {
 	color: #cb4335;
 	cursor: pointer;
 	text-decoration: none;
-}
-@supports( -webkit-background-clip: text ) {
-	a {
-		background: linear-gradient(-175deg,#cb4335 0%,#10093b 95%);
-		background-clip: text;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		color: #12073f;
-		transition: color .15s linear, -webkit-text-fill-color .15s linear, text-decoration-color .5s linear;
-		text-decoration: underline;
-		border-bottom: 1px solid  #12073f;
-	}
-	a:hover {
-		-webkit-text-fill-color: #cb4335;
-	}
 }
 @supports( text-decoration-color: #12073f ) {
 	a {
