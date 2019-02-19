@@ -31,10 +31,13 @@ body:before {
 }
 
 main {
+	overflow: hidden;
+}
+
+main .body {
 	padding: 5%;
 	max-width: 90em;
 	margin: 0 auto;
-	overflow: hidden;
 }
 
 .w-logo {
@@ -107,7 +110,7 @@ main {
 		left: -10%;
 		height: 8em;
 		position: absolute;
-		background: linear-gradient(-180deg, transparent, #f1f1f1 80%);
+		background: linear-gradient(-180deg, rgba(255,255,255,0), #f1f1f1 80%);
 	}
 	.sub .copy p {
 		position: relative;
