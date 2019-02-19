@@ -12,11 +12,11 @@ I’ve helped clients like [Rolling Stone](https://rollingstone.com) with their 
 
 ### Responsive Web Design 
 
-I’m incredibly fortunate to have played a small part in the history of Responsive Web Design, from eavesdropping on the earliest discussions of the responsive [Boston Globe](https://bostonglobe.com) project—all the way back in 2011—to leading the addition of responsive image features to the HTML5 specification, native browser implementations, and major CMSes.
+I’m incredibly fortunate to have played a small part in the history of Responsive Web Design, from eavesdropping on the earliest discussions of the responsive [Boston Globe](https://bostonglobe.com) project—all the way back in 2011—to [leading the addition of responsive image features to the HTML5 specification](https://www.w3.org/community/respimg/), [native browser implementations](https://alistapart.com/blog/post/bringing-responsive-images-to-browsers), and [major CMSes](https://make.wordpress.org/core/2015/09/30/responsive-images-merge-proposal/).
 
 ### Front-End Performance
 
-I’ve had the privilege of traveling the world speaking about front-end performance, at conferences like An Event Apart and Smashing. I’ve worked with organizations large and small not just to audit, identify, and help fix their performance pain points, but to establish workflows, development habits, and support systems that allow those improvements—and their results—to persist long after I’m gone.
+I’ve had the privilege of traveling the world speaking about front-end performance. I’ve worked with organizations large and small not just to audit, identify, and help fix their performance pain points, but to establish workflows, development habits, and support systems that allow those improvements—and their results—to persist long after I’m gone.
 
 ### Accessibility
 

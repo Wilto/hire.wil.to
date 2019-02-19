@@ -5,9 +5,9 @@ order: 2
 img: books.gif
 ---
 
-A few years ago I wrote [JavaScript for Web Designers](https://abookapart.com/products/javascript-for-web-designers). It’s paced for anyone taking their first steps into the world of JavaScript development.
+I wrote [JavaScript for Web Designers](https://abookapart.com/products/javascript-for-web-designers) a few years ago, now. It’s paced for anyone taking their first steps into the world of JavaScript development, but in-depth enough for anyone looking to understand JavaScript’s inner workings.
 
-I wrote [Image Performance](https://abookapart.com/products/image-performance) just last year. It’s a deep-dive into a subject that’s easy to take for granted, but difficult to master: “putting images on the web.” It covers everything from the ins and outs of image formats and compression methods to responsive image markup to automation
+I wrote [Image Performance](https://abookapart.com/products/image-performance) just last year. It’s a deep-dive into a subject that’s easy to take for granted, but difficult to master: putting images on the web. It covers everything from the inner workings of image formats and compression methods to responsive image markup to automation.
 
 Before writing two books of my own, I wrote the _Robust, Responsible, Responsive Web Design_ chapter of [Smashing Book 4](https://www.smashingmagazine.com/smashing-book-4-new-perspectives/), and two chapters on JavaScript for [Learning Web Design](https://www.learningwebdesign.com/).
 

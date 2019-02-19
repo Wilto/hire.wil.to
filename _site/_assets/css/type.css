@@ -215,3 +215,11 @@ ol li:before {
     color: #cb4335;
     margin-right: 1em;
 }
+
+.site-foot p {
+    opacity: .75;
+    font-family: AdelleSans, sans-serif;
+    margin:: .15em 0;
+    max-width: 100%;
+    font-size: 1em;
+}

@@ -34,11 +34,21 @@ a {
 	color: #12073f;
 	transition: color .15s linear, -webkit-text-fill-color .15s linear, text-decoration-color .5s linear;
 	text-decoration: underline;
-	text-decoration-color: #12073f;
+	border-bottom: 1px solid  #12073f;
 }
 a:hover {
 	-webkit-text-fill-color: #cb4335;
 	text-decoration-color: #cb4335;
 	color: #cb4335;
 	cursor: pointer;
+}
+@supports( text-decoration-color: #12073f ) {
+	a {
+		text-decoration-color: #12073f;
+		border-bottom: none;
+	}
+	a:hover {
+		text-decoration-color: #cb4335;
+		border-bottom: none;
+	}
 }
