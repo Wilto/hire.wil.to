@@ -33,9 +33,10 @@ a {
 	border-bottom: 1px solid  #12073f;
 }
 a:hover {
-	text-decoration-color: #cb4335;
+	border-bottom-color: #cb4335;
 	color: #cb4335;
 	cursor: pointer;
+	text-decoration: none;
 }
 @supports( -webkit-background-clip: text ) {
 	a {
@@ -50,9 +51,6 @@ a:hover {
 	}
 	a:hover {
 		-webkit-text-fill-color: #cb4335;
-		text-decoration-color: #cb4335;
-		color: #cb4335;
-		cursor: pointer;
 	}
 }
 @supports( text-decoration-color: #12073f ) {
@@ -61,6 +59,7 @@ a:hover {
 		border-bottom: none;
 	}
 	a:hover {
+		text-decoration: underline;
 		text-decoration-color: #cb4335;
 		border-bottom: none;
 	}
