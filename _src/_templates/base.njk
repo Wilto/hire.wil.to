@@ -4,8 +4,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>{{ metadata.title }}{% if title %} - {{ title }}{% endif %}</title>
-		<meta name="description" content="{% if lede %}{{ lede }}{% else %}{{ metadata.description }}{% endif %}">
+		<title>{{ data.title }}</title>
+		<meta name="description" content="{{ data.description }}">
 
 		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
 	</head>
@@ -36,7 +36,7 @@
 		</footer>
 
 		<script>
-			if( 'serviceWorker' in navigator /* && window.location.hostname !== "localhost" */ ) {
+			if( 'serviceWorker' in navigator && window.location.hostname !== "localhost" ) {
 				navigator.serviceWorker.register('sw.js');
 			}
 		</script>
