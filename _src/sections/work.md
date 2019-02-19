@@ -1,7 +1,7 @@
 ---
 pageClass: work
 title: "I’ve helped build some websites."
-img: work.png
+img: work.gif
 order: 1
 fullbleed: true
 ---

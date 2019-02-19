@@ -2,7 +2,7 @@
 pageClass: books
 title: "I do a lot of writing."
 order: 2
-img: books.png
+img: books.gif
 ---
 
 A few years ago I wrote [JavaScript for Web Designers](https://abookapart.com/products/javascript-for-web-designers). It’s paced for anyone taking their first steps into the world of JavaScript development.

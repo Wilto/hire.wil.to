@@ -1,4 +1,6 @@
 module.exports = function(eleventyConfig) {
+	const CleanCSS = require('clean-css');
+
 	// all posts
 	eleventyConfig.addCollection("sections", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
@@ -10,6 +12,11 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("_src/_assets");
 	eleventyConfig.addPassthroughCopy("_src/sw.js");
+
+	eleventyConfig.addFilter(
+		'cssmin',
+		code => new CleanCSS({}).minify(code).styles
+	);
 
 	return {
 		templateFormats: [
