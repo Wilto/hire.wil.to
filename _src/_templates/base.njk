@@ -4,8 +4,49 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+		<meta property="og:site_name" content="{{ data.title }}">
+		<link rel="canonical" href="{{ data.url }}">
+
 		<title>{{ data.title }}</title>
 		<meta name="description" content="{{ data.description }}">
+
+		<meta name="application-name" content="{{ data.title }}">
+		<link rel="manifest" href="/webappmanifest.json">
+
+		<!-- Half my site’s transfer is in `meta` nonsense. -->
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"url": "{{ data.url }}",
+				"title": "{{ data.title }}",
+				"author_name": "{{ data.author.name }}",
+				"logo": "{{ data.url }}/_assets/img/card.gif",
+				"sameAs" : [
+					"https://twitter.com/wilto"
+				] 
+			}
+		</script>
+
+		<!-- Twitter Card Stuff: -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@wilto">
+		<meta name="twitter:creator" content="@wilto">
+		<meta property="og:site_name" content="{{ data.name }}">
+		<meta name="twitter:title" content="{{ data.title }}">
+		<meta property="og:title" content="{{ data.title }}">
+		<meta property="og:url" content="{{ data.url }}">
+
+		<meta name="twitter:description" content="{{ data.description }}">
+		<meta property="og:description" content="{{ data.description }}">
+
+
+		<meta name="twitter:image" content="{{ data.url }}/_assets/img/card.gif">
+		<meta name="twitter:image:alt" content="{{ data.description }}">
+		<meta property="og:image" content="{{ data.url }}/_assets/img/card.gif">
+		<meta property="og:image:alt" content="{{ data.description }}">
+
+		<meta name="author" content="{{ data.author.name }}">
 
 		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
 	</head>

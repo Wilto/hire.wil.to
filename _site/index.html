@@ -4,8 +4,49 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>I’m Mat. I make websites.</title>
+		<meta property="og:site_name" content="I’m Mat.">
+		<link rel="canonical" href="https://matmarquis.com/">
+
+		<title>I’m Mat.</title>
 		<meta name="description" content="I make websites.">
+
+		<meta name="application-name" content="I’m Mat.">
+		<link rel="manifest" href="/webappmanifest.json">
+
+		<!-- Half my site’s transfer is in `meta` nonsense. -->
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Organization",
+				"url": "https://matmarquis.com/",
+				"title": "I’m Mat.",
+				"author_name": "Mat Marquis",
+				"logo": "https://matmarquis.com//_assets/img/card.gif",
+				"sameAs" : [
+					"https://twitter.com/wilto"
+				] 
+			}
+		</script>
+
+		<!-- Twitter Card Stuff: -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@wilto">
+		<meta name="twitter:creator" content="@wilto">
+		<meta property="og:site_name" content="Hire Wilto">
+		<meta name="twitter:title" content="I’m Mat.">
+		<meta property="og:title" content="I’m Mat.">
+		<meta property="og:url" content="https://matmarquis.com/">
+
+		<meta name="twitter:description" content="I make websites.">
+		<meta property="og:description" content="I make websites.">
+
+
+		<meta name="twitter:image" content="https://matmarquis.com//_assets/img/card.gif">
+		<meta name="twitter:image:alt" content="I make websites.">
+		<meta property="og:image" content="https://matmarquis.com//_assets/img/card.gif">
+		<meta property="og:image:alt" content="I make websites.">
+
+		<meta name="author" content="Mat Marquis">
 
 		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
 	</head>
@@ -30,7 +71,7 @@
 		<h2 class="section-hed txt-shaded" id="latest-work">I’ve helped build some websites.</h2>
 	</div>
 	
-	<img src="/_assets/img/work.gif" class="fullbleed">
+	<img src="/_assets/img/work.gif" class="fullbleed" alt="">
 	
 	<div class="copy">
 		<p>I’m a developer that heavily skews “designer.” From design to implementation, I believe that a good layout is a flexible, durable, and maintainable one.</p>
@@ -48,7 +89,7 @@
 		<h2 class="section-hed txt-shaded" id="latest-books">I do a lot of writing.</h2>
 	</div>
 	
-	<img src="/_assets/img/books.gif">
+	<img src="/_assets/img/books.gif" alt="">
 	
 	<div class="copy">
 		<p>I wrote <a href="https://abookapart.com/products/javascript-for-web-designers">JavaScript for Web Designers</a> a few years ago, now. It’s paced for anyone taking their first steps into the world of JavaScript development, but in-depth enough for anyone looking to understand JavaScript’s inner workings.</p>
