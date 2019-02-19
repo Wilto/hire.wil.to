@@ -7,7 +7,7 @@ body {
 	height: auto;
 	background: linear-gradient(-7.5deg, #f1f1f1 60%, #fff);
 	border-top: .3em solid  #12073f;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 @media( min-width: 65em ) {
