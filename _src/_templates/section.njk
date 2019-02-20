@@ -1,6 +1,6 @@
-<section class="sub sub-{{  section.data.pageClass }}" role="region" aria-labelledby="latest-{{  section.data.pageClass }}">
+<section class="sub sub-{{  section.data.pageClass }}" role="region" aria-labelledby="section-{{  section.data.pageClass }}">
 	<div class="section-head">
-		<h2 class="section-hed txt-shaded" id="latest-{{ section.data.pageClass }}">{{ section.data.title | safe }}</h2>
+		<h2 class="section-hed txt-shaded" id="section-{{ section.data.pageClass }}">{{ section.data.title | safe }}</h2>
 	</div>
 	{% if section.data.img %}
 	<img src="/_assets/img/{{ section.data.img }}"{% if section.data.fullbleed %} class="fullbleed"{% endif %} alt="{{ section.data.alt}}">
