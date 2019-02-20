@@ -1,9 +1,7 @@
 ---
 pageClass: contact
 title: "I want to change things for the better."
-img: books.gif
-alt: Covers of the books Image Performance and JavaScript for Web Designers, side by side.
-order: 5
+order: 4
 ---
 
 Me, I’m stubborn. If it can be done on the web, I believe that it can be done responsively, it can be done accessibly, and it can be done in a performant way—it can be made to work for everyone. 
