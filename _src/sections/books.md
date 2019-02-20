@@ -3,6 +3,7 @@ pageClass: books
 title: "I do a lot of writing."
 order: 2
 img: books.gif
+alt: Covers of the books Image Performance and JavaScript for Web Designers, side by side.
 ---
 
 I wrote [JavaScript for Web Designers](https://abookapart.com/products/javascript-for-web-designers) a few years ago, now. It’s paced for anyone taking their first steps into the world of JavaScript development, but in-depth enough for anyone looking to understand JavaScript’s inner workings.

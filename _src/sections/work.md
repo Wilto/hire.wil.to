@@ -2,13 +2,14 @@
 pageClass: work
 title: "I’ve helped build some websites."
 img: work.gif
+alt: Screenshots of Axios.com, PillPack.com, RollingStone.com, and microsoft.com/design in illustrated generic device frames.
 order: 1
 fullbleed: true
 ---
 
 I’m a developer that heavily skews “designer.” From design to implementation, I believe that a good layout is a flexible, durable, and maintainable one.
 
-I’ve helped clients like [Rolling Stone](https://rollingstone.com) with their performance concerns, clients like [Axios](https://axios.com) and [Microsoft](https://www.microsoft.com/en-us/mwf) with their accessibility concerns, and Amazon’s [Pillpack](https://www.pillpack.com/) with—well, building their website.
+I’ve helped clients like [Rolling Stone](https://rollingstone.com) with their performance concerns, clients like [Axios](https://axios.com) and [Microsoft](https://www.microsoft.com/en-us/mwf) with their accessibility concerns, and Amazon’s [PillPack](https://www.pillpack.com/) with—well, building their website.
 
 ### Responsive Web Design 
 
