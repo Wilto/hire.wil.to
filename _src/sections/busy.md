@@ -1,7 +1,7 @@
 ---
 pageClass: busy
 title: I keep busy.
-order: 3
+order: 4
 ---
 
 I’ve been a speaker at conferences like [An Event Apart](https://aneventapart.com/) and [Smashing Conference](https://smashingconf.com), and an emcee for [Confab](https://www.confabevents.com). I’m an amateur boxer, [aspiring chef](https://wiltomakesfood.com), halfway decent carpenter, passable antique British motorcycle mechanic, and wannabe gardener.

@@ -77,7 +77,11 @@
 
 				{% set sections = collections.sections | reverse %}
 				{%- for section in sections-%}
+					{% if section.data.pageClass == "contact" %}
+					{% include "contact.njk" %}
+					{% else %}
 					{% include "section.njk" %}
+					{% endif %}
 				{%- endfor -%}
 			</div>
 		</main>

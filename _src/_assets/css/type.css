@@ -206,3 +206,31 @@ ol li:before {
     max-width: 100%;
     font-size: .95em;
 }
+
+label {
+    text-transform: uppercase;
+    color: #12073e;
+    font-family: AdelleSans, sans-serif;
+    font-weight: bold;
+    font-size: .95em;
+    letter-spacing: .025em;
+}
+
+input,
+textarea {
+    font-family: AdelleSans, sans-serif;
+    font-size: 1.15em;
+    clear: both;
+    display: block;
+    border: 2px solid rgba(20,10,60, .7);
+    border-radius: .2em;
+    margin: .25em 0 1.5em 0;
+    width: 100%;
+    padding: 1.5% 1.5% 1% 1.5%;
+}
+textarea {
+    min-height: 5.25em;
+}
+input[type="email"] {
+    font-family: ;
+}

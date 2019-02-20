@@ -153,9 +153,6 @@ main .body {
 			grid-template-rows: auto auto;
 			grid-gap: 0 3.5%;
 		}
-		.sub.sub-busy {
-			grid-column: 3 / span 13; 
-		}
 		.sub:nth-of-type(odd) { 
 			grid-column: 3 / span 13;
 		}
@@ -195,9 +192,25 @@ main .body {
 		.sub:nth-of-type(odd) .copy { 
 			grid-column: 2 / -1;
 		}
+		form {
+			border: 1px solid red;
+			grid-column: 2 / span 3;
+		}
 	}
 }
 
+form {
+	margin-top: 2em;
+	border: 1px solid blue;
+	width: 75%;
+	padding-right: 25%;
+}
+
+form * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 .site-foot {
 	opacity: .9;
