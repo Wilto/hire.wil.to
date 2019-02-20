@@ -1,24 +1,19 @@
 /* Adelle Sans */
 @font-face {
     font-family: 'AdelleSans';
-    src: url('/_assets/fonts/AdelleSans-Regular.woff2') format('woff2'),
-        url('/_assets/fonts/AdelleSans-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'AdelleSans';
     src: url('/_assets/fonts/AdelleSans-Bold.woff2') format('woff2'),
         url('/_assets/fonts/AdelleSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'AdelleSans';
     src: url('/_assets/fonts/AdelleSans-Light.woff2') format('woff2'),
         url('/_assets/fonts/AdelleSans-Light.woff') format('woff');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /* Tiempos Text */
@@ -28,26 +23,13 @@
         url('/_assets/fonts/TiemposTextWeb-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 @font-face {
     font-family: 'Tiempos';
     src: url('/_assets/fonts/TiemposTextWeb-RegularItalic.woff2') format('woff2'),
         url('/_assets/fonts/TiemposTextWeb-RegularItalic.woff') format('woff');
     font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'Tiempos';
-    src: url('/_assets/fonts/TiemposTextWeb-Semibold.woff2') format('woff2'),
-        url('/_assets/fonts/TiemposTextWeb-Semibold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Tiempos';
-    src: url('/_assets/fonts/TiemposTextWeb-SemiboldItalic.woff2') format('woff2'),
-        url('/_assets/fonts/TiemposTextWeb-SemiboldItalic.woff') format('woff');
-    font-weight: bold;
     font-style: italic;
 }
 
@@ -58,6 +40,7 @@
         url('/_assets/fonts/TiemposHeadline-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -221,5 +204,5 @@ ol li:before {
     font-family: AdelleSans, sans-serif;
     margin:: .15em 0;
     max-width: 100%;
-    font-size: 1em;
+    font-size: .95em;
 }
