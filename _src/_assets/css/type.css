@@ -118,7 +118,7 @@ p {
 /* Hed/Subhed */
 h1, h2, h3, h4 {
     font-family: AdelleSans, sans-serif;
-    margin: 1.75em 0 0 0;
+    margin: 1.25em 0 0 0;
     line-height: 1.15;
     display: inline-block;
     color: #10093b ;
