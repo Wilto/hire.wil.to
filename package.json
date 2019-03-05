@@ -3,8 +3,7 @@
   "version": "0.0.1",
   "description": "Do it, chicken.",
   "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch"
+    "dev": "grunt watch & eleventy --serve"
   },
   "repository": {
     "type": "git",
