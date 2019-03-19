@@ -134,15 +134,30 @@
 
 }
 
+.resume-contact > span {
+	display: block;
+	padding: .2em 0;
+}
 .resume-contact a {
 	padding: 0 1em;
 	text-decoration: none;
 	font-family: Tiempos, serif;
 	letter-spacing: .025em;
 	font-weight: 100;
+	font-size: .9em;
 }
-.resume-contact > span+span:before {
-	content: "•";
-	margin-right: .33em;
-	color: #cb4335;
+
+@media( min-width: 60em ) {
+	.resume-contact a {
+		font-size: 1em;
+	}
+	.resume-contact > span {
+		display: inline;
+	}
+	.resume-contact > span+span:before {
+		content: "•";
+		margin-right: .33em;
+		color: #cb4335;
+	}
+
 }

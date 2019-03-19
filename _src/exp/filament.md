@@ -10,5 +10,5 @@ During my time at Filament Group, I was able to play a small role in the establi
 
 Responsibilities included:
 
-* Helping to develop new approaches, techniques, and even [additions to the web platform itself](https://www.w3.org/TR/html-picture-element/) that have become responsive web design “best practices” today.
-* As a lead on the [jQuery UI](https://jqueryui.com/) and, later, [jQuery Mobile](https://jquerymobile.com/) projects, I was responsible for helping to manage two massive open source component library projects—ensuring a predictable, theme-able, and fundamentally accessible front-end across countless unknowable contexts.
+* Helping to develop new approaches, techniques, and even [additions to the web platform itself](https://www.w3.org/TR/html-picture-element/) that have become responsive web design “best practices” today
+* As a lead on the [jQuery UI](https://jqueryui.com/) and, later, [jQuery Mobile](https://jquerymobile.com/) projects, I was responsible for helping to manage two massive open source component library projects—ensuring a predictable, theme-able, and fundamentally accessible front-end across countless unknowable contexts
