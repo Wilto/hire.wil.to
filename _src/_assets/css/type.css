@@ -182,21 +182,28 @@ h1.hed {
 ul,
 ol {
     list-style: none;
-    font-size: 1.2em;
-    font-family: AdelleSans, sans-serif;
+    font-family: Tiempos, serif;
     padding: 0;
     margin: 0;
 }
 ul li,
 ol li {
-    margin: .25em 0;
-    padding-left: .5em;
+    margin: .75em 0;
+    position: relative;
+    padding-left: 1em;
+    margin-left: 1em;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #12073e;
 }
 ul li:before,
 ol li:before {
     content: "•";
+    position: absolute;
+    top: -.15em;
+    left: 0;
+    font-size: 1.15em;
     color: #cb4335;
-    margin-right: 1em;
 }
 
 .site-foot p {

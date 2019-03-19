@@ -201,7 +201,6 @@ main .body {
 
 form {
 	margin-top: 2em;
-	border: 1px solid blue;
 	width: 75%;
 	padding-right: 25%;
 }
@@ -222,3 +221,5 @@ form * {
 	padding: 1.5%;
 	margin: 5em auto 0 auto;
 }
+
+

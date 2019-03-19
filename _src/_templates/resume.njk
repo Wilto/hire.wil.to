@@ -59,29 +59,32 @@
 		<meta name="author" content="{{ data.author.name }}">
 
 		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
+		<link rel="stylesheet" type="text/css" href="/_assets/css/resume.css">
 	</head>
 	<body>
 
-		<img src="/_assets/img/w.svg" class="w-logo" alt="">
+		<a href="/"><img src="/_assets/img/w.svg" class="w-logo" alt=""></a>
 		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 
 			<div class="body">
-				<header class="head">
+				<header class="head resume-header">
 					<h1 class="hed txt-shaded">{{ subhed | safe }}</h1>
 					<p class="lede">{{ lede | safe }}</p>
 				</header>
+
+				<div class="head resume-contact">
+					<span><a href="mailto:mat@matmarquis.com">mat@matmarquis.com</a></span>
+					<span><a href="tel:17815689120">(781) 568-9120</a></span>
+					<span><a href="https://twitter.com/wilto">@wilto</a></span>
+				</div>
 
 				<section class="sub sublede">
 					{{ layoutContent | safe }}
 				</section>
 
-				{% set sections = collections.sections | reverse %}
-				{%- for section in sections-%}
-					{% if section.data.pageClass == "contact" %}
-					{% include "contact.njk" %}
-					{% else %}
-					{% include "section.njk" %}
-					{% endif %}
+				{% set exp = collections.exp | reverse %}
+				{%- for section in exp -%}
+					{% include "experience.njk" %}
 				{%- endfor -%}
 			</div>
 		</main>
