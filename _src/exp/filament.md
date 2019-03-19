@@ -1,12 +1,12 @@
 ---
 pageClass: filament
 title: Filament Group
-lede: "Designveloper™"
+lede: "Designer & Front-End Developer"
 start: 2011
 end: 2014
 ---
 
-During my time at Filament Group, I was able to play a small role in the establishment of responsive web design as a common design/development practice. My time included working alongside Ethan Marcotte on the responsive [Boston Globe](https://bostonglobe.com) project—a successful effort to prove that responsive web design was a viable approach at scale. Due to the blurry line between “designer” and “developer” necessitated by this shift in thinking—hence our tongue-in-cheek job titles—this time led to the publication of my first book: [_JavaScript for Web Designers_](https://abookapart.com/products/javascript-for-web-designers). 
+During my time at Filament Group, I was able to play a small role in the establishment of responsive web design as a common design/development practice. My time included working alongside Ethan Marcotte on the responsive [Boston Globe](https://bostonglobe.com) project—a successful effort to prove that responsive web design was a viable approach at scale. Perhaps due to the blurry line between “designer” and “developer” necessitated by this shift in thinking—hence our tongue-in-cheek “designveloper” job titles—this time led to the publication of my first book: [_JavaScript for Web Designers_](https://abookapart.com/products/javascript-for-web-designers). 
 
 Responsibilities included:
 
