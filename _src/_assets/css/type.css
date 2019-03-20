@@ -124,6 +124,9 @@ h1, h2, h3, h4 {
     color: #10093b ;
     font-weight: bold;
 }
+h1+p, h2+p, h3+p, h4+p {
+    margin-top: .5em;
+}
 
 .section-hed {
     font-size: 1.4em;

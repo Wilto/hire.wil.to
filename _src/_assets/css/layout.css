@@ -89,7 +89,7 @@ main .body {
 	.sub img.fullbleed {
 		width: auto;
 		margin-left: 2.5%;
-		max-width: 45em !important;
+		max-width: 45em;
 		margin-right: -20em;
 	}
 }
@@ -160,6 +160,9 @@ main .body {
 			grid-column: 1 / 1;
 			align-self: flex-end;
 		}
+		.sub.sublede {
+			display: block;
+		}
 		.sub .copy {
 			grid-column: 1 / 2;
 		}
@@ -173,7 +176,6 @@ main .body {
 			grid-column: 4 / span 11; 
 		}
 		.sub:nth-of-type(odd) {
-			display: grid;
 			grid-template-columns: auto auto;
 			grid-template-rows: auto 1fr;
 			grid-gap: 0 2.5%;
