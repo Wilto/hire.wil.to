@@ -148,7 +148,7 @@
 	border-bottom: 0;
 }
 
-@media( min-width: 60em ) {
+@media( min-width: 60em ), print {
 	.resume-contact a {
 		font-size: 1em;
 	}
@@ -162,3 +162,37 @@
 	}
 
 }
+
+@media print {
+	body {
+		border-top: none;
+		font-size: .625em;
+		padding-top: 0;
+	}
+	.w-logo {
+		display: none;
+	}
+	.txt-shaded {
+		background: none;
+		-webkit-text-fill-color: #10093b;
+		color: #10093b;
+	}
+	.section-hed {
+		margin-top: .5em;
+	}
+	.sub {
+		page-break-inside: avoid; 
+	}
+	.copy {
+		padding-bottom: 1em;
+	}
+	.sub.sublede {
+		margin-bottom: .5em;
+	}
+	.site-foot {
+		display: none;
+	}
+}
+
+
+
