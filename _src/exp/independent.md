@@ -5,7 +5,7 @@ start: 2017
 end: Current
 ---
 
-I partner with organizations to identify and remediate potential user-facing concerns, from the earliest design phases to production deployment. This work is often equal parts technical and cultural: in an ideal engagement, I’m not only there to audit and fix their performance, accessibility, and usability pain points, but to help establish workflows, development habits, and support systems that will allow the results to persist long after I’m gone. During this time, I’ve published my second book: [_Image Performance_](https://abookapart.com/products/image-performance).
+I partner with organizations to identify and remediate potential user-facing concerns, from the earliest design phases to production deployment. This work is often equal parts technical and cultural: in an ideal engagement, I’m not only there to audit and fix their performance, accessibility, and usability pain points, but to help establish workflows, development habits, and support systems that will allow the results to persist long after I’m gone. During this time I’ve published my second book: [_Image Performance_](https://abookapart.com/products/image-performance).
 
 Past projects include:
 
