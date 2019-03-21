@@ -11,7 +11,7 @@ https://www.filamentgroup.com/
 (function() {
 	"use strict";
 
-	const version = "1";
+	const version = "777";
 	const cacheName = version + "::wiltomakesfood:";
 
 	const staticCacheName = cacheName + "static";
