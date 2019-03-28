@@ -82,6 +82,26 @@
 					{{ layoutContent | safe }}
 				</section>
 
+				<div class="sub sub-extras">
+					<h2>Published Works</h2>
+					<ul>
+						<li><em><a href="https://abookapart.com/products/image-performance">Image Performance</a></em>, 2017, A Book Apart</li>
+						<li><em><a href="https://abookapart.com/products/javascript-for-web-designers">JavaScript for Web Designers</a></em>, 2015, A Book Apart</li>
+						<li><a href="https://www.smashingmagazine.com/smashing-book-4-new-perspectives/">Smashing Book 4</a>, contributor</li>
+						<li><a href="https://www.learningwebdesign.com/">Learning Web Design</a>, contributor</li>
+					</ul>
+
+					<h2>Past Talks</h2>
+					<p>I’ve spoken at conferences like <a href="https://aneventapart.com/speakers/mat-marquis">An Event Apart</a>, <a href="https://www.confabevents.com/speakers/mat-marquis">Confab</a>, and <a href="https://smashingconf.com">Smashing Conference</a>.</p>
+					<ul>
+						<li><a href="https://vimeo.com/174172566">Performance Under Pressure</a></li>
+						<li><a href="https://www.youtube.com/watch?v=WZAx3f0nJS0">Smaller, Faster Websites</a></li>
+					</ul>
+
+					<h2>Work History</h2>
+				</div>
+
+				</section>
 				{% set exp = collections.exp | reverse %}
 				{%- for section in exp -%}
 					{% include "experience.njk" %}

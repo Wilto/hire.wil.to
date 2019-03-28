@@ -6,7 +6,7 @@ start: 2014
 end: 2017
 ---
 
-Responsible for overseeing Bocoup’s _Inclusive Web Development_ offering, providing dedicated consulting and training on accessibility, performance, and responsive web design “best practices” for client teams, as well as providing guidance, mentoring, and direction for internal teams working on client-facing projects.
+I was responsible for overseeing Bocoup’s _Inclusive Web Development_ offering, providing dedicated consulting and training on accessibility, performance, and responsive web design “best practices” for client teams, as well as providing guidance, mentoring, and direction for internal teams working on client-facing projects.
 
 Responsibilites included:
 

@@ -160,7 +160,20 @@
 		margin-right: .33em;
 		color: #cb4335;
 	}
+}
 
+.sub-extras {
+	display: block;
+	margin: 0;
+}
+.sub-extras h2 {
+	margin: 2em 0 0 0;
+}
+.sub-extras h2:first-of-type {
+	margin-top: 0;
+}
+.sub-extras+.sub {
+	margin-top: .5em;
 }
 
 @media print {

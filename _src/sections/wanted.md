@@ -1,6 +1,6 @@
 ---
 pageClass: work-wanted
-title: "I want to make things better."
+title: "I want to build a better web."
 order: 3
 ---
 
