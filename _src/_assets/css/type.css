@@ -109,7 +109,7 @@ p {
 
 /* Gradient background effect */
 .txt-shaded {
-    background: linear-gradient(-175deg,#cb4335 0%,#10093b 65%);
+    background: linear-gradient(-175deg,#cb4335 0%,#10093b 82.5%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(0,0,0,.15);
@@ -132,6 +132,8 @@ h1+p, h2+p, h3+p, h4+p {
     font-size: 1.5em;
     padding-bottom: .5em;
     float: left;
+    margin-top: 1em;
+    padding-top: .5em;
 }
 .sub p {
     clear: left;
