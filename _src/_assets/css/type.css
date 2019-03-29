@@ -129,14 +129,14 @@ h1+p, h2+p, h3+p, h4+p {
 }
 
 .section-hed {
-    font-size: 1.4em;
+    font-size: 1.5em;
     padding-bottom: .5em;
     float: left;
 }
 .sub p {
     clear: left;
 }
-@media( min-width: 35em ) {
+@media( min-width: 37.5em ) {
     .section-hed {
         font-size: 4vw;
     }
@@ -151,6 +151,7 @@ h1+p, h2+p, h3+p, h4+p {
         padding-bottom: 0;
     }
 }
+
 h1.hed {
     font-family: TiemposHed, serif;
     font-size: 8.2vw;
@@ -158,8 +159,6 @@ h1.hed {
     line-height: 1.1;
     margin: .25em 0 .25em 0;
 }
-
-
 @media( min-width: 30em ) {
     h1.hed {
         font-size: 2.475em;
@@ -180,6 +179,10 @@ h1.hed {
     h1.hed span {
         white-space: nowrap;
     }
+}
+
+.copy h3 {
+    font-size: 1.1em;
 }
 
 ul,

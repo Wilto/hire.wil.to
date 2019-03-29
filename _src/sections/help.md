@@ -1,6 +1,6 @@
 ---
 pageClass: help
-title: "I want to help."
+title: "I’m here to help."
 order: 4
 ---
 
