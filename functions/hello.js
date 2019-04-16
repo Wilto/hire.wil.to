@@ -3,6 +3,6 @@ exports.handler = function(event, context, callback) {
 
   callback(null, {
     statusCode: 200,
-    body: `You sent the following: ${JSON.stringify(params)}`
+    body: `<h1>${ params.title }</h1><p>${ params.lede }</p>`
   });
 };
