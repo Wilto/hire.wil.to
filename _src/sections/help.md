@@ -10,6 +10,6 @@ If your organization is working to help those in vulnerable positions and you co
 
 ### Office Hours
 
-If your non-profit could use an on-the-fly accessibility audit, quick tips for speeding up your website, a second set of eyes on a particularly thorny browser issue, or a little advice about the web, how it’s built, and how to hire the people that build it: [you’re welcome to my time, whenever it’s convenient for you and your team](https://calendly.com/mat-marquis/office-hours).
+If your non-profit could use an on-the-fly accessibility audit, quick tips for speeding up your website, a second opinion on a particularly thorny browser issue, or general advice about the web, how it’s built, and how to hire the people that build it: [you’re welcome to my time, whenever it’s convenient for you and your team](https://calendly.com/mat-marquis/office-hours).
 
 We’re all in this together.
