@@ -9,7 +9,7 @@ fullbleed: true
 
 I’m a developer that heavily skews “designer.” From design to implementation, I believe that a good layout is a flexible, durable, and maintainable one.
 
-I’ve been brought in to help clients like [Rolling Stone](https://rollingstone.com) with their performance concerns, clients like [Axios](https://axios.com) and [Microsoft](https://www.microsoft.com/en-us/mwf) with their accessibility concerns, and clients like [ProPublica](https://propublica.com/) and [Amazon’s PillPack](https://www.pillpack.com/) to build, maintain, and improve on their websites.
+I’ve been brought in to help clients like [Rolling Stone](https://rollingstone.com) with their performance concerns, clients like [Axios](https://axios.com) and [Microsoft](https://www.microsoft.com/en-us/mwf) with their accessibility concerns, and clients like [ProPublica](https://propublica.org/) and [Amazon’s PillPack](https://www.pillpack.com/) to build, maintain, and improve on their websites.
 
 ### Responsive Web Design 
 
