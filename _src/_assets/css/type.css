@@ -31,6 +31,7 @@
         url('/_assets/fonts/TiemposTextWeb-RegularItalic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
+    font-display: swap;
 }
 
 /* Tiempos Headline */
