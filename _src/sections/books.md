@@ -2,7 +2,7 @@
 pageClass: books
 title: "I do a lot of writing."
 order: 2
-img: books.gif
+img: books.jpg
 alt: Covers of the books Image Performance and JavaScript for Web Designers, side by side.
 ---
 
