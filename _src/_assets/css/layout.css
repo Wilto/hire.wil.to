@@ -124,8 +124,8 @@ main .body {
 			shape-margin: 5%;
 			z-index: -1;
 		}
-		.sub.sub-books img { shape-outside: url(/_assets/img/books.gif); }
-		.sub.sub-work img { shape-outside: url(/_assets/img/work.gif); }
+		.sub.sub-books img { shape-outside: url(/_assets/img/books.png); }
+		.sub.sub-work img { shape-outside: url(/_assets/img/work.png); }
 	}
 }
 
