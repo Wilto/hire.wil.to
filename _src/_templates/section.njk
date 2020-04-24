@@ -3,7 +3,10 @@
 		<h2 class="section-hed txt-shaded" id="section-{{ section.data.pageClass }}">{{ section.data.title | safe }}</h2>
 	</div>
 	{% if section.data.img %}
-	<img src="/_assets/img/{{ section.data.img }}"{% if section.data.fullbleed %} class="fullbleed"{% endif %} alt="{{ section.data.alt}}">
+	<picture{% if section.data.fullbleed %} class="fullbleed"{% endif %}>
+		<source type="image/webp" srcset="/_assets/img/{{ section.data.img }}.webp">
+		<img src="/_assets/img/{{ section.data.img }}.png" alt="{{ section.data.alt}}">
+	</picture>
 	{% endif %}
 	<div class="copy">
 		{{ section.data.content | safe }}
