@@ -2,6 +2,6 @@ const fs = require('fs');
 
 module.exports = {
   getCSS(path) {
-    return fs.readFileSync(`${__dirname}/../..${path}`, 'utf-8');
+    return `/* ${__dirname}${path} */` + fs.readFileSync(`${__dirname}${path}`, 'utf-8');
   }
 };
