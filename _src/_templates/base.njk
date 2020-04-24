@@ -58,7 +58,11 @@
 
 		<meta name="author" content="{{ data.author.name }}">
 
-		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
+		<style>
+			{{ critcss.getCSS('/_site/_assets/css/crit/all.css') | safe }}</style>
+		</style>
+
+		<link rel="stylesheet" href="/_assets/css/all.css" media="print" onload="this.media='all'">
 	</head>
 	<body>
 
