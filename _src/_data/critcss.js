@@ -1,7 +1,8 @@
 const fs = require('fs');
+const path = require('path');
 
 module.exports = {
-  getCSS(path) {
-    return `/* ${__dirname}${path} */`;
+  getCSS(relPath) {
+    return fs.readFileSync( path.join( `${__dirname}/tmp/crit.css` ), 'utf-8' );
   }
 };

@@ -16,7 +16,7 @@ module.exports = function(grunt) {
 			src: [
 				'_site/_assets/css/crit/all.css'
 			],
-			dest: '_site/_assets/css/crit/all.css'
+			dest: '_src/_data/tmp/crit.css'
 		}
 	});
 };
