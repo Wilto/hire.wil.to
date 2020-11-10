@@ -50,13 +50,18 @@
 		<meta name="twitter:description" content="{{ lede }}">
 		<meta property="og:description" content="{{ lede }}">
 
-
 		<meta name="twitter:image" content="{{ data.url }}/_assets/img/card.gif">
 		<meta name="twitter:image:alt" content="{{ data.description }}">
 		<meta property="og:image" content="{{ data.url }}/_assets/img/card.gif">
 		<meta property="og:image:alt" content="{{ data.description }}">
 
 		<meta name="author" content="{{ data.author.name }}">
+
+		<link rel="preload" href="/_assets/fonts/TiemposHeadline-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/_assets/fonts/AdelleSans-Light.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/_assets/fonts/TiemposTextWeb-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/_assets/fonts/TiemposTextWeb-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/_assets/fonts/AdelleSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
 		<style>
 			{{ critcss.getCSS('/_assets/css/crit/all.css') | safe }}
@@ -68,7 +73,7 @@
 	</head>
 	<body>
 
-		<img src="/_assets/img/w.svg" class="w-logo" alt="">
+		<img src="/_assets/img/w.svg" width="125" height="125" class="w-logo" alt="">
 		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 
 			<div class="body">
