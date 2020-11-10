@@ -73,14 +73,15 @@
 	</head>
 	<body>
 
-		<img src="/_assets/img/w.svg" width="125" height="125" class="w-logo" alt="">
+		<header>
+			<img src="/_assets/img/w.svg" width="125" height="125" class="w-logo" alt="">
+		</header>
 		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
-
 			<div class="body">
-				<header class="head">
+				<div class="head">
 					<h1 class="hed txt-shaded">{{ subhed | safe }}</h1>
 					<p class="lede">{{ lede | safe }}</p>
-				</header>
+				</div>
 
 				<section class="sub sublede">
 					{{ layoutContent | safe }}
