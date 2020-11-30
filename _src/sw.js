@@ -11,29 +11,23 @@ https://www.filamentgroup.com/
 (function() {
 	"use strict";
 
-	const version = "777";
-	const cacheName = version + "::wiltomakesfood:";
+	const version = "778";
+	const cacheName = version + "::hirewilto:";
 
 	const staticCacheName = cacheName + "static";
 	const pagesCacheName = cacheName + "pages";
 	const imagesCacheName = cacheName + "images";
 
 	const offlinePages = [
-		"/"
+		"/index.html"
 	];
 	const staticAssets = [
-		'/_assets/fonts/TiemposHeadline-Regular.woff',
 		'/_assets/fonts/TiemposHeadline-Regular.woff2',
 		'/_assets/fonts/AdelleSans-Light.woff2',
 		'/_assets/fonts/TiemposTextWeb-Regular.woff2',
 		'/_assets/fonts/TiemposTextWeb-RegularItalic.woff2',
 		'/_assets/fonts/AdelleSans-Bold.woff2',
-		'/_assets/fonts/AdelleSans-Light.woff',
-		'/_assets/fonts/TiemposTextWeb-Regular.woff',
-		'/_assets/fonts/TiemposTextWeb-RegularItalic.woff',
-		'/_assets/css/globals.css',
-		'/_assets/css/layout.css',
-		'/_assets/css/type.css'
+		'/_assets/css/all.css'
 	];
 
 	function updateStaticCache() {
