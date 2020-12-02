@@ -19,7 +19,8 @@ https://www.filamentgroup.com/
 	const imagesCacheName = cacheName + "images";
 
 	const offlinePages = [
-		"/index.html"
+		"/index.html",
+		"/"
 	];
 	const staticAssets = [
 		'/_assets/fonts/TiemposHeadline-Regular.woff2',
