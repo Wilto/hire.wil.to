@@ -218,7 +218,7 @@ ol li:before {
 .site-foot p {
     opacity: .85;
     font-family: AdelleSans, sans-serif;
-    margin:: .15em 0;
+    margin: .15em 0;
     max-width: 100%;
     font-size: .95em;
 }

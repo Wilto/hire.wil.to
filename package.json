@@ -27,6 +27,7 @@
     "grunt-contrib-cssmin": "^3.0.0",
     "grunt-contrib-uglify-es": "^3.3.0",
     "grunt-contrib-watch": "^1.1.0",
+    "grunt-critical": "^2.0.0",
     "grunt-responsive-images": "^1.10.1"
   },
   "dependencies": {

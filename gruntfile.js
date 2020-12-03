@@ -16,15 +16,13 @@ module.exports = function(grunt) {
 		'concat:css',
 		'uglify',
 		'cssmin:css',
-		'criticalcss',
-		'cssmin:crit'
+		'critical'
 	]);
 
 	grunt.registerTask('watch-css', [
 		'concat:css',
 		'cssmin:css',
-		'criticalcss',
-		'cssmin:crit'
+		'critical'
 	]);
 
 	grunt.registerTask('watch-js', [

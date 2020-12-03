@@ -1,16 +1,18 @@
 module.exports = function(grunt) {
-	grunt.loadNpmTasks( "grunt-criticalcss" );
+	grunt.loadNpmTasks( "grunt-critical" );
 
 	var path = require( "path" ).resolve( "_site/_assets/css" );
 
-	grunt.config( "criticalcss", {
-		home: {
+	grunt.config( "critical", {
+		test: {
 			options: {
-				url: "https://hire.wil.to/",
-				height: 600,
-				filename: path + "/all.css",
-				outputfile: path + "/crit/all.css"
-			}
+				base: './',
+				css: [
+					'_site/_assets/css/all.css'
+				]
+			},
+			src: '_site/index.html',
+			dest: '_src/_assets/css/crit.css'
 		}
 	});
 };
