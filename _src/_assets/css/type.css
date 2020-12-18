@@ -187,63 +187,10 @@ h1.hed {
 .copy h3 {
     font-size: 1.1em;
 }
-
-ul,
-ol {
-    list-style: none;
-    font-family: Tiempos, serif;
-    padding: 0; 
-    margin: 0;
-}
-ul li,
-ol li {
-    margin: .75em 0;
-    position: relative;
-    padding-left: 1em;
-    margin-left: 1em;
-    font-size: 1.1em;
-    line-height: 1.5;
-    color: #12073e;
-}
-ul li:before,
-ol li:before {
-    content: "•";
-    position: absolute;
-    top: -.15em;
-    left: 0;
-    font-size: 1.15em;
-    color: #cb4335;
-}
-
 .site-foot p {
     opacity: .85;
     font-family: AdelleSans, sans-serif;
     margin: .15em 0;
     max-width: 100%;
     font-size: .95em;
-}
-
-label {
-    text-transform: uppercase;
-    color: #12073e;
-    font-family: AdelleSans, sans-serif;
-    font-weight: bold;
-    font-size: .95em;
-    letter-spacing: .025em;
-}
-
-input,
-textarea {
-    font-family: AdelleSans, sans-serif;
-    font-size: 1.15em;
-    clear: both;
-    display: block;
-    border: 2px solid rgba(20,10,60, .7);
-    border-radius: .2em;
-    margin: .25em 0 1.5em 0;
-    width: 100%;
-    padding: 1.5% 1.5% 1% 1.5%;
-}
-textarea {
-    min-height: 5.25em;
 }
