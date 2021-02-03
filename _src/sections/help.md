@@ -1,15 +1,13 @@
 ---
 pageClass: help
-title: "I’m here to help."
+title: "We’re all in this together."
 order: 4
 ---
 
-Listen, it’s hard out there—for our friends, our families, our neighbors, and many of us. If you’re here to help people, I’m here to help you. 
+If you’re here to help people, I’m here to help you.
 
-If your organization is working to help those in vulnerable positions and you could use an extra set of website-making hands, I’ll work with your budget and your schedule to make it happen.
+I’m immensely proud to have voulenteered time to organizations like [Blaseball Cares](https://www.blaseballcares.com) (let’s grow, Flowers) and [The Covid Tracking Project](https://covidtracking.com/)—groups working to make a real difference in peoples’ lives. 
 
-### Office Hours
+If your organization is working to help those in vulnerable positions and you think my areas of expertise could help you do just that, [let’s talk](mailto:mat@matmarquis.com). 
 
-If your non-profit could use an on-the-fly accessibility audit, quick tips for speeding up your website, a second opinion on a particularly thorny browser issue, or general advice about the web, how it’s built, and how to hire the people that build it: [you’re welcome to my time, whenever it’s convenient for you and your team](https://calendly.com/mat-marquis/office-hours).
-
-We’re all in this together.
+Whether it’s an on-the-fly accessibility audit, tips for speeding up your website, a second opinion on a particularly thorny browser issue, or _any_ advice about the web, how it’s built, and how to hire the people that build it: your non-profit is welcome to [book some “Office Hours” time on my calendar](https://calendly.com/mat-marquis/office-hours), completely free of charge, whenever it’s convenient for you and your team.
