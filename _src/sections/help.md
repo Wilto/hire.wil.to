@@ -6,7 +6,7 @@ order: 4
 
 If you’re here to help people, I’m here to help you.
 
-I’m immensely proud to have volunteered time to organizations like [Blaseball Cares](https://www.blaseballcares.com) (let’s grow, Flowers) and [The Covid Tracking Project](https://covidtracking.com/)—groups working to make a real difference in peoples’ lives. 
+I’m immensely proud to have volunteered time to organizations like [Blaseball Cares](https://www.blaseballcares.com) (claws up) and [The Covid Tracking Project](https://covidtracking.com/)—groups working to make a real difference in peoples’ lives. 
 
 If your organization is working to help those in vulnerable positions and you think my areas of expertise could help you do just that, [let’s talk](mailto:mat@matmarquis.com). 
 
