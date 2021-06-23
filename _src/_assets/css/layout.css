@@ -6,8 +6,8 @@ body {
 	min-height: 100vh;
 	height: auto;
 	background: linear-gradient(-7.5deg, #f1f1f1 60%, #fff);
-	border-top: .3em solid  #12073f;}
-
+	border-top: .3em solid  #12073f;
+}
 @media( min-width: 65em ) {
 	body {
 		border-top-width: .42vw;
@@ -29,6 +29,13 @@ body:before {
 		top: -.42vw;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: linear-gradient(-7.5deg, #111 80%,#12073f);
+		border-top: .3em solid rgba(255,255,255,.75);
+	}
+} 
 
 main {
 	overflow: hidden;

@@ -50,3 +50,17 @@ a:hover {
 		border-bottom: none;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	a {
+		color: #cb4335;
+		transition: color .15s linear, -webkit-text-fill-color .15s linear, text-decoration-color .5s linear;
+		text-decoration: none;
+		border-bottom: 1px solid  #12073f;
+	}
+	a:hover {
+		border-bottom-color: #cb4335;
+		cursor: pointer;
+		text-decoration: none;
+	}
+}

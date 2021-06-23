@@ -49,7 +49,7 @@ p.lede {
     font-family: AdelleSans, sans-serif;
     font-weight: 300;
     font-size: 5.65vw;
-    line-height: 1.3;
+    line-height: 1.45;
     margin-top: .25em;
     padding-right: 2em;
     max-width: 38em;
@@ -74,7 +74,7 @@ p.lede {
 .sublede p {
     font-size: 1.1em;
     font-weight: 300;
-    line-height: 1.525;
+    line-height: 1.65;
 }
 @media( min-width: 31.5em ) {
     .sublede p {
@@ -91,7 +91,7 @@ p.lede {
 p {
     font-family: Tiempos, serif;
     font-size: .95em;
-    line-height: 1.55;
+    line-height: 1.65;
     color:#10093b;
     max-width: 45em;
 }
@@ -193,4 +193,27 @@ h1.hed {
     margin: .15em 0;
     max-width: 100%;
     font-size: .95em;
+}
+
+@media (prefers-color-scheme: dark) {
+    .section-hed,
+    p.lede,
+    p {
+        color: #e5e4ea;
+    }
+    .txt-shaded {
+        background: linear-gradient(-175deg,#cd5346 0%, #f4f4f6 35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(0,0,0,.15);
+    }
+    svg #w-bg {
+        fill:  #fff;
+    }
+    svg #w-fore {
+        fill: #12073f;
+    }
+    img {
+        opacity: .85;
+    }
 }
