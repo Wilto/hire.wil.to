@@ -194,23 +194,25 @@ h1.hed {
     font-size: .95em;
 }
 
-@media (prefers-color-scheme: dark) {
+@media( prefers-color-scheme: dark ) {
+ /* Hed/Subhed */
+    h1, h2, h3, h4,
     .section-hed,
     p.lede,
     p {
-        color: #e5e4ea;
+        color: #3c3d34;
     }
     .txt-shaded {
-        background: linear-gradient(-175deg,#cd5346 0%, #f4f4f6 35%);
+        background: linear-gradient(-175deg,#ef4136 0%, #3c3d34 50%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: rgba(0,0,0,.15);
     }
     svg #w-bg {
-        fill:  #fff;
+        fill:  #3c3d34;
     }
     svg #w-fore {
-        fill: #12073f;
+        fill: #fff;
     }
     img {
         opacity: .85;

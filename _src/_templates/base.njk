@@ -105,9 +105,18 @@
 		</footer>
 
 		<script>
+			(function() {
+				var mm = window.matchMedia( "( prefers-color-scheme: dark )" ),
+					setTheme = function( e ) {
+						document.querySelector( '[name="theme-color"]' ).setAttribute( "content", ( e.matches ? "#3c3d34" : "#12073f" ) );
+					};
+				mm.addEventListener("change", setTheme );
+				setTheme( mm );
+			}());
 			if( 'serviceWorker' in navigator && location.hostname !== "localhost" ) {
 				navigator.serviceWorker.register('sw.js');
 			}
+			
 		</script>
 	</body>
 </html>

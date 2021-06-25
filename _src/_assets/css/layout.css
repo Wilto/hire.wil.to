@@ -32,8 +32,8 @@ body:before {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background: linear-gradient(-7.5deg, #111 80%,#12073f);
-		border-top: .3em solid rgba(255,255,255,.75);
+		background: linear-gradient(-7.5deg,#faf7eb 50%,#f5f1e2);
+		border-top: .3em solid #3c3d34;
 	}
 } 
 
