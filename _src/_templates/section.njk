@@ -5,7 +5,7 @@
 	{% if section.data.img %}
 	<picture{% if section.data.fullbleed %} class="fullbleed"{% endif %}>
 		<source type="image/webp" srcset="/_assets/img/{{ section.data.img }}.webp">
-		<img src="/_assets/img/{{ section.data.img }}.png" alt="{{ section.data.alt}}"{% if section.data.fullbleed %} width="716" height="427"{% else %} width="392" height="350"{% endif %}>
+		<img src="/_assets/img/{{ section.data.img }}.png" alt="{{ section.data.alt}}"{% if section.data.fullbleed %} width="716" height="427"{% else %} width="392" height="350"{% endif %} loading="lazy">
 	</picture>
 	{% endif %}
 	<div class="copy">
