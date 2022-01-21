@@ -124,6 +124,11 @@ main .body {
 		z-index: 2;
 	}
 }
+.sub.sublede {
+	display: block;
+	min-height: 20em;
+	margin-bottom: 0;
+}
 
 @supports( shape-margin: 1px ) {
 	@media( min-width: 46.875em ) {
@@ -166,9 +171,6 @@ main .body {
 		.sub .section-head {
 			grid-column: 1 / 1;
 			align-self: flex-end;
-		}
-		.sub.sublede {
-			display: block;
 		}
 		.sub .copy {
 			grid-column: 1 / 2;

@@ -21,6 +21,11 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy("_src/_assets");
 	eleventyConfig.addPassthroughCopy("_src/sw.js");
+	
+	// Admin setup
+	eleventyConfig.addPassthroughCopy('admin/config.yml');
+	eleventyConfig.addPassthroughCopy('admin/previews.js');
+	eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
 
 	eleventyConfig.addFilter(
 		'cssmin',
