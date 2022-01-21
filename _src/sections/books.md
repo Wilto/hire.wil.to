@@ -1,11 +1,12 @@
 ---
 pageClass: books
-title: "I’ve written a few good books, and tech edited some great ones."
 order: 2
+title: I’ve written a few good books, and tech edited some great ones.
 img: books.webp
 imgfallbk: books.png
-imgmask: books.gif
-alt: Covers of the books Image Performance and JavaScript for Web Designers, side by side.
+imgmask: ""
+alt: Covers of the books Image Performance and JavaScript for Web Designers,
+  side by side.
 ---
 
 [JavaScript for Web Designers](https://abookapart.com/products/javascript-for-web-designers) is paced for anyone taking their first steps into the world of JavaScript development, but in-depth enough for anyone looking to understand JavaScript’s inner workings. [Image Performance](https://abookapart.com/products/image-performance) is a deep-dive into a subject that’s easy to take for granted, but difficult to master: putting images on the web. It covers everything from the inner workings of image formats and compression methods to responsive image markup to automation. 
