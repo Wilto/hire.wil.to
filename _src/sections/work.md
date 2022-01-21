@@ -1,7 +1,9 @@
 ---
 pageClass: work
 title: "I’ve helped build some websites."
-img: work
+img: work.webp
+imgfallbk: work.png
+imgmask: work.gif
 alt: Screenshots of Axios.com, PillPack.com, RollingStone.com, and microsoft.com/design in illustrated generic device frames.
 order: 1
 fullbleed: true

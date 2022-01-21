@@ -2,7 +2,9 @@
 pageClass: books
 title: "I’ve written a few good books, and tech edited some great ones."
 order: 2
-img: books
+img: books.webp
+imgfallbk: books.png
+imgmask: books.gif
 alt: Covers of the books Image Performance and JavaScript for Web Designers, side by side.
 ---
 

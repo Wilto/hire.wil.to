@@ -63,9 +63,11 @@
 		<link rel="preload" href="/_assets/fonts/TiemposTextWeb-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="/_assets/fonts/AdelleSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
 
+		{% if critcss %}
 		<style>
 			{{ critcss.getCSS('_src/_assets/css/crit.css') | safe }}
 		</style>
+		{% endif %}
 		<link rel="stylesheet" href="/_assets/css/all.css" media="print" onload="this.media='all'">
 		<noscript>
 			<link rel="stylesheet" href="/_assets/css/all.css">
@@ -78,14 +80,18 @@
 		</header>
 		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 			<div class="body">
+				{% if subhed %}
 				<div class="head">
 					<h1 class="hed txt-shaded">{{ subhed | safe }}</h1>
 					<p class="lede">{{ lede | safe }}</p>
 				</div>
+				{% endif %}
 
+				{% if layoutContent %}
 				<section class="sub sublede">
 					{{ layoutContent | safe }}
 				</section>
+				{% endif %}
 
 				{% set sections = collections.sections | reverse %}
 				{%- for section in sections-%}
