@@ -18,6 +18,13 @@ module.exports = function(grunt) {
 		'cssmin:css'
 	]);
 
+	grunt.registerTask('prod', [
+		'concat:css',
+		'uglify',
+		'cssmin:css',
+		'critical'
+	]);
+
 	grunt.registerTask('watch-css', [
 		'concat:css',
 		'cssmin:css',
