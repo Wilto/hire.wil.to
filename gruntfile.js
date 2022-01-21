@@ -15,7 +15,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'concat:css',
 		'uglify',
-		'cssmin:css'
+		'cssmin:css',
+		'critical'
 	]);
 
 	grunt.registerTask('prod', [
@@ -27,8 +28,8 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('watch-css', [
 		'concat:css',
-		'cssmin:css',
-		'critical'
+		'uglify',
+		'cssmin:css'
 	]);
 
 	grunt.registerTask('watch-js', [

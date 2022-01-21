@@ -5,9 +5,9 @@
   "scripts": {
     "cms:precompile": "make-dir _site/admin && nunjucks-precompile _src/_templates > _site/admin/templates.js -i \"\\.(njk|css|svg)$\"",
     "cms:bundle": "rollup --config",
-    "start": "concurrently \"grunt\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"_src/_templates/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
+    "start": "concurrently \"grunt watch watch-css\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"_src/_templates/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
     "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
-    "production": "grunt && npm run cms:precompile && npm run cms:bundle && grunt prod && eleventy"
+    "production": "npm run cms:precompile && npm run cms:bundle && grunt prod && eleventy"
   },
   "engines": {
     "node": ">=14.0.0"

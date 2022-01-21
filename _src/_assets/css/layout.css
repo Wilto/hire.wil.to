@@ -84,11 +84,16 @@ main .body {
 }
 
 .sub picture.fullbleed {
-	max-width: 130%;
-	width: 130%;
-	margin-left: -15%;
+	max-width: 110vw;
+	width: 110vw;
+	margin: 0 auto;
 }
-@media( min-width: 46.875em ) {
+.sub picture.fullbleed img {
+	display: block;
+	margin-left: -10vw;
+}
+
+@media( min-width: 42em ) {
 	.sub picture {
 		margin: 1.5em auto 1em 5%;
 		float: right;
@@ -98,6 +103,9 @@ main .body {
 		margin-left: 2.5%;
 		max-width: 45em;
 		margin-right: -20em;
+	}
+	.sub picture.fullbleed img {
+		margin-left: 0;
 	}
 }
 
