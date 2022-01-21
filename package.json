@@ -9,6 +9,9 @@
     "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
     "production": "grunt && npm run cms:precompile && npm run cms:bundle && grunt prod && eleventy"
   },
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:Wilto/hire.wil.to.git"
