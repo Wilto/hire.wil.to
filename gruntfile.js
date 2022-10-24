@@ -24,6 +24,7 @@ module.exports = function(grunt) {
 		'concat:nofonts',
 		'uglify',
 		'cssmin:css',
+		'cssmin:nofonts',
 		'critical'
 	]);
 

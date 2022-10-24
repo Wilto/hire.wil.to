@@ -11,6 +11,12 @@ module.exports = function(grunt) {
 				'<%= concat.css.dest %>'
 			],
 			dest: '<%= concat.css.dest %>'
+		},
+		nofonts: {
+			src: [
+				'<%= concat.nofonts.dest %>'
+			],
+			dest: '<%= concat.nofonts.dest %>'
 		}
 	});
 };
