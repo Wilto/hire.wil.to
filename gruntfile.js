@@ -21,6 +21,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('prod', [
 		'concat:css',
+		'concat:nofonts',
 		'uglify',
 		'cssmin:css',
 		'critical'

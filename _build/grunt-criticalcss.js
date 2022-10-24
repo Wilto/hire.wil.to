@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 			options: {
 				base: './',
 				css: [
-					'_site/_assets/css/all.css'
+					'_site/_assets/css/nofonts.css'
 				]
 			},
 			src: '_site/index.html',
