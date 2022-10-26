@@ -30,8 +30,10 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('watch-css', [
 		'concat:css',
+		'concat:nofonts',
 		'uglify',
-		'cssmin:css'
+		'cssmin:css',
+		'cssmin:nofonts'
 	]);
 
 	grunt.registerTask('watch-js', [

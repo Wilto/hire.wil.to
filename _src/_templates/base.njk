@@ -61,15 +61,7 @@
 		<link rel="preload" href="/_assets/fonts/AdelleSans-Light.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="/_assets/fonts/TiemposTextWeb-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
-		{% if critcss %}
-		<style>
-			{{ critcss.getCSS('_src/_assets/css/crit.css') | safe }}
-		</style>
-		{% endif %}
-		<link rel="stylesheet" href="/_assets/css/nofonts.css" media="print" onload="this.media='all'">
-		<noscript>
-			<link rel="stylesheet" href="/_assets/css/nofonts.css">
-		</noscript>
+		<link rel="stylesheet" href="/_assets/css/all.css">
 	</head>
 	<body>
 
