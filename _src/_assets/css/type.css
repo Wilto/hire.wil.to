@@ -186,12 +186,34 @@ h1.hed {
 .copy h3 {
     font-size: 1.1em;
 }
-.site-foot p {
-    opacity: .85;
+.site-foot {
+    opacity: .75;
     font-family: AdelleSans, sans-serif;
-    margin: .15em 0;
-    max-width: 100%;
     font-size: .95em;
+}
+.me {
+    font-size: .975em;
+}
+.me a {
+    color: #3c3d34;
+    transition: color .35s linear, text-decoration-color .5s linear;
+}
+.me a b {
+    color: #ef4136;
+    transition: color .35s linear;
+    font-weight: 600;
+}
+.me a:hover {
+    color: #000;
+    border-bottom-color: #cb4335;
+}
+.me a:hover b {
+    color: #6d252e;
+}
+.me dt {
+    font-weight: bold;
+    padding-top: 2px;
+    color: #222;
 }
 
 @media( prefers-color-scheme: dark ) {
