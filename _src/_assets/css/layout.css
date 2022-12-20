@@ -209,8 +209,7 @@ main .body {
 	border-top: 1px solid rgba(0,0,0,.2);
 	text-align: right;
 	clear: both;
-	padding-top: .75em;
-	padding: 0 2em;
+	padding: .75em 2em;
 	align-items: stretch;
 	max-width: 1200px;
 	margin: 5em auto 0 auto;
