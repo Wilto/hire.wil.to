@@ -210,10 +210,21 @@ main .body {
 	text-align: right;
 	clear: both;
 	padding-top: .75em;
-	display: flex;
+	padding: 0 2em;
 	align-items: stretch;
 	max-width: 1200px;
 	margin: 5em auto 0 auto;
+}
+.site-meta {
+	text-align:left;
+}
+@media( min-width: 75em ) {
+	.site-foot {
+		display: flex;
+	}
+	.site-meta {
+		text-align: right;
+	}
 }
 .site-foot > * {
 	flex-grow: 2;
@@ -236,7 +247,5 @@ main .body {
 .me dt {
 	min-width: 5em;
 }
-.site-meta {
-	text-align: right;
-}
+
 
