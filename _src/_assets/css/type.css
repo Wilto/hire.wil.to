@@ -130,52 +130,26 @@ h1+p, h2+p, h3+p, h4+p {
 
 .section-hed {
     font-size: 1.5em;
-    padding-bottom: .5em;
-    float: left;
+    font-size: clamp( 1.5em, 4vw, 1.65em );
+    padding-bottom: 0;
     margin-top: 1em;
     padding-top: .5em;
 }
-.sub p {
-    clear: left;
+.copy h3 {
+    font-size: 1.2em;
+    font-size: clamp( 1.1em, 3vw, 1.25em );
 }
-@media( min-width: 37.5em ) {
-    .section-hed {
-        font-size: 4vw;
-    }
-}
-@media( min-width: 42.5em ) {
-    .section-hed {
-        font-size: 1.7em;
-    }
-}
-@media( min-width: 80em ) {
-    .section-hed {
-        padding-bottom: 0;
-    }
-}
+
 
 h1.hed {
     font-family: TiemposHed, serif;
     font-size: 8.2vw;
+    font-size: clamp( 2.5em, 3.75vw, 3.5em );
     font-weight: normal;
     line-height: 1.1;
     margin: .25em 0 .25em 0;
 }
-@media( min-width: 30em ) {
-    h1.hed {
-        font-size: 2.475em;
-    }
-}
-@media( min-width: 85em ) {
-    h1.hed {
-        font-size: 2.925vw;
-    }
-}
-@media( min-width: 109.375em ) {
-    h1.hed {
-        font-size: 3.19895625em;
-    }
-}
+
 
 @media( min-width: 45em ) {
     h1.hed span {
@@ -183,9 +157,7 @@ h1.hed {
     }
 }
 
-.copy h3 {
-    font-size: 1.1em;
-}
+
 .site-foot {
     opacity: .75;
     font-family: AdelleSans, sans-serif;
@@ -235,8 +207,5 @@ h1.hed {
     }
     svg #w-fore {
         fill: #fff;
-    }
-    img {
-        opacity: .85;
     }
 }

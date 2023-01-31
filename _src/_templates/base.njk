@@ -86,9 +86,23 @@
 				{% set sections = collections.sections | reverse %}
 				{%- for section in sections-%}
 					{% if section.data.pageClass == "contact" %}
-					{% include "contact.njk" %}
+					<section class="sub sub-{{  section.data.pageClass }}" role="region" aria-labelledby="section-{{  section.data.pageClass }}">
+						<div class="section-head">
+							<h2 class="section-hed txt-shaded" id="section-{{ section.data.pageClass }}">{{ section.data.title | safe }}</h2>
+						</div>
+						<div class="section-content">
+							{{ section.data.content | safe }}
+						</div>
+					</section>
 					{% else %}
-					{% include "section.njk" %}
+					<section class="sub sub-{{ section.data.pageClass }}" role="region" aria-labelledby="section-{{  section.data.pageClass }}">
+						<div class="section-head">
+							<h2 class="section-hed" id="section-{{ section.data.pageClass }}">{{ section.data.title | safe }}</h2>
+						</div>
+						<div class="section-content">
+							{{ section.data.content | safe }}
+						</div>
+					</section>
 					{% endif %}
 				{%- endfor -%}
 			</div>

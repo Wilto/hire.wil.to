@@ -2,20 +2,5 @@
 	<div class="section-head">
 		<h2 class="section-hed" id="section-{{ section.data.pageClass }}">{{ section.data.title | safe }}</h2>
 	</div>
-	{% if section.data.img %}
-	{% if section.data.imgmask %}
-	<style>
-		.sub.sub-{{ section.data.pageClass }} picture {
-			shape-outside: url("/_assets/img/{{ section.data.imgmask }}");
-		}
-	</style>
-	{% endif %}
-	<picture{% if section.data.fullbleed %} class="fullbleed"{% endif %}>
-		<source type="image/webp" srcset="/_assets/img/{{ section.data.img }}">
-		<img src="/_assets/img/{{ section.data.imgfallbk }}" alt="{{ section.data.alt}}"{% if section.data.fullbleed %} width="716" height="427"{% else %} width="392" height="350"{% endif %} loading="lazy">
-	</picture>
-	{% endif %}
-	<div class="copy">
-		{{ section.data.content | safe }}
-	</div>
+	{{ section.data.content | safe }}
 </section>

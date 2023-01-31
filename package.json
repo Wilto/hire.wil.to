@@ -6,7 +6,7 @@
     "cms:precompile": "make-dir _site/admin && nunjucks-precompile _src/_templates > _site/admin/templates.js -i \"\\.(njk|css|svg)$\"",
     "cms:bundle": "rollup --config",
     "start": "concurrently \"grunt watch watch-css\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"_src/_templates/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
-    "serve": "cross-env ELEVENTY_ENV=development npx eleventy --serve",
+    "serve": "concurrently \"grunt watch\" \"ELEVENTY_ENV=development npx eleventy --serve\"",
     "production": "npm run cms:precompile && npm run cms:bundle && grunt prod && eleventy"
   },
   "engines": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://hire.wil.to",
   "devDependencies": {
-    "@11ty/eleventy": "^0.7.1",
+    "@11ty/eleventy": "^1.0.2",
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "bl": "^3.0.0",
     "chokidar-cli": "^3.0.0",
@@ -49,6 +49,7 @@
     "rollup-plugin-node-resolve": "^5.2.0"
   },
   "dependencies": {
+    "@11ty/eleventy-img": "^2.0.1",
     "@11ty/eleventy-plugin-directory-output": "^1.0.1",
     "grunt-criticalcss": "^2.1.0"
   }

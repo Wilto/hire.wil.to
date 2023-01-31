@@ -1,7 +1,34 @@
-module.exports = function(eleventyConfig) {
-	const CleanCSS = require('clean-css');
+const Image = require("@11ty/eleventy-img");
+const path = require('path')
+const CleanCSS = require('clean-css');
 
-	// Index page sections
+module.exports = function(eleventyConfig) {
+	async function imageShortcode(src, alt, sizes="100vw", cls="") {
+		let metadata = await Image(src, {
+			formats: ["avif", "webp", "jpeg"],
+			widths: [800, 600, 400],
+			urlPath: "./img/",
+			outputDir: "./_site/img/",
+			filenameFormat: function( id, src, width, format, options ) {
+				const ext = path.extname( src ),
+				name = path.basename( src, ext );
+
+				return `${name}-${width}.${format}`
+			}
+		});
+
+		let imageAttributes = {
+			alt,
+			class: cls,
+			sizes,
+			loading: "lazy"
+		};
+
+		return Image.generateHTML(metadata, imageAttributes);
+	}
+
+	eleventyConfig.addAsyncShortcode("respimg", imageShortcode);
+
 	eleventyConfig.addCollection("sections", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
 			return item.inputPath.match(/^\.\/_src\/sections\//) !== null;
@@ -10,16 +37,7 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
-	// Prior work experience
-	eleventyConfig.addCollection("exp", function(collection) {
-		return collection.getAllSorted().filter(function(item) {
-			return item.inputPath.match(/^\.\/_src\/exp\//) !== null;
-		}).sort(function(a, b) {
-			return a.data.start - b.data.start;
-		});
-	});
-
-	eleventyConfig.addPassthroughCopy("_src/_assets");
+	eleventyConfig.addPassthroughCopy("_src/_assets/");
 	eleventyConfig.addPassthroughCopy("_src/sw.js");
 	
 	// Admin setup
@@ -39,10 +57,6 @@ module.exports = function(eleventyConfig) {
 			"html"
 		],
 
-		// If your site lives in a different subdirectory, change this.
-		// Leading or trailing slashes are all normalized away, so don’t worry about it.
-		// If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-		// This is only used for URLs (it does not affect your file structure)
 		pathPrefix: "/",
 		markdownTemplateEngine: "njk",
 		htmlTemplateEngine: "njk",
