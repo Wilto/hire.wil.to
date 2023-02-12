@@ -27,7 +27,7 @@
   },
   "homepage": "https://hire.wil.to",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy": "^2.0.0",
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "bl": "^3.0.0",
     "chokidar-cli": "^3.0.0",
