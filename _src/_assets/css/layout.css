@@ -254,7 +254,8 @@ img.work-ms {
 	display: flex;
 	align-items: center;
 	flex-grow: 2;
-	padding: .25em 0;
+	padding: .2em 0;
+	margin: .2em 0;
 }
 .me dt {
 	min-width: 5em;
