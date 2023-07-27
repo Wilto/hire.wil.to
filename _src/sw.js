@@ -11,7 +11,7 @@ https://www.filamentgroup.com/
 (function() {
 	"use strict";
 
-	const version = "778";
+	const version = "780";
 	const cacheName = version + "::hirewilto:";
 
 	const staticCacheName = cacheName + "static";
