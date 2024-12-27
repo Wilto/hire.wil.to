@@ -80,7 +80,7 @@ The ports are configurable by way of “expansion cards” that fit into six slo
 
 The screen’s aspect ratio gives me a little more vertical space, and I’m not mad about it. Presumably this thing is a lot faster, but honestly, I’ll never have the throttle open far enough to know.
 
-All told, the biggest “good” I can cite is that I don’t find myself missing anything about my MBP’s hardware, and that’s a high bar to clear. The trackpad and keyboard feel good, after the _tremendous_ psychic damage of rebuilding my muscle memory.
+All told, the biggest “good” I can cite is that I don’t find myself missing anything about my MBP’s hardware, and that’s a high bar to clear. The trackpad and keyboard feel good once I got past the _tremendous_ psychic damage of rebuilding twenty years’ worth of muscle memory.
 
 ### The bad
 
