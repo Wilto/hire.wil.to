@@ -70,6 +70,9 @@ p.lede {
     }
 }
 
+p.lede a {
+    text-decoration: none;
+}
 .sublede p {
     font-size: 1.1em;
     font-weight: 300;
@@ -106,7 +109,22 @@ p {
     }
 }
 
+.blog p:not(.lede) {
+    font-size: 1em;
+    line-height: 1.7;
+    max-width: 50em;
+}
 
+@media( min-width: 30em ) {
+    .blog p:not(.lede) {
+        font-size: 3.4vw;
+    }
+}
+@media( min-width: 37em ) {
+    .blog p:not(.lede) {
+        font-size: 1.2em;
+    }
+}
 /* Gradient background effect */
 .txt-shaded {
     background: linear-gradient(-175deg,#cb4335 0%,#10093b 82.5%);
@@ -186,6 +204,45 @@ h1.hed {
     font-weight: bold;
     padding-top: 2px;
     color: #222;
+}
+
+.nav {
+    font-family: AdelleSans, sans-serif;
+    font-weight: 600;
+}
+.nav a {
+    text-decoration: none;
+    color: #3c3d34;
+}
+.nav a[aria-current],
+.nav a:hover {
+    color: #6d252e;
+}
+
+.post-head {
+    padding: 2em 0 0 0;
+}
+.post-head:not(:first-of-type)::before {
+    content: "";
+    display: block;
+    margin-inline: auto;
+    width: 25%;
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+.post-head .hed {
+    font-family: Tiempos, serif;
+    font-size: 2em;
+    font-weight: normal;
+    line-height: 1.65;
+
+    max-width: 45em;
+}
+.post-head .hed a {
+    color: #10093b;
+    text-decoration: none;
+}
+.post-head .hed a:hover {  
+    color: #6d252e;
 }
 
 @media( prefers-color-scheme: dark ) {

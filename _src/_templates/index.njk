@@ -1,0 +1,25 @@
+
+{% extends "./base.njk" %}
+{% block inner %}
+<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+  <div class="body">
+    <div class="head">
+      <h1 class="hed txt-shaded">{{ title | safe }}</h1>
+      <p class="lede">{{ lede | safe }}</p>
+    </div>
+    <div class="sub">
+    {{ content | safe }}
+
+    <div class="sub">
+      {% for post in collections.posts %}
+        <div class="post-head">
+          <h2 class="hed"><a href="{{ post.url }}">{{ post.data.title |safe}}</a></h2>
+          <p class="lede">{{ post.data.lede | safe}}</p>
+        </div>
+      {% endfor %}
+    </div>
+    </div>
+
+  </div>
+</main>
+{% endblock %}

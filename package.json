@@ -1,11 +1,11 @@
-{
+  {
   "name": "hire-wilto",
   "version": "0.0.1",
   "description": "Do it, chicken.",
   "scripts": {
     "cms:precompile": "make-dir _site/admin && nunjucks-precompile _src/_templates > _site/admin/templates.js -i \"\\.(njk|css|svg)$\"",
     "cms:bundle": "rollup --config",
-    "start": "concurrently \"grunt watch watch-css\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"_src/_templates/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
+    "start": "concurrently \"grunt && grunt watch watch-css\" \"npm run cms:bundle -- --watch\" \"chokidar \\\"_src/_templates/**\\\" -c \\\"npm run cms:precompile\\\"\" \"npm run serve\"",
     "serve": "concurrently \"grunt watch\" \"ELEVENTY_ENV=development npx eleventy --serve\"",
     "production": "npm run cms:precompile && npm run cms:bundle && grunt prod && eleventy"
   },

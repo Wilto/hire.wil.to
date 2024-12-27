@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-	padding-top: 6.5em;
 	position: relative;
 	min-width: 100%;
 	min-height: 100vh;
@@ -46,13 +45,20 @@ main .body {
 	max-width: 90em;
 	margin: 0 auto;
 }
+.nav {
+	display: flex;
+	gap: 2em;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1.25em 1.25em 0 1.25em;
+}
 .w-logo {
-	position: absolute;
-	right: 1.25vw;
-	top: 1.25vw;
+	width: 10vw;
 	max-width: 7.5em;
 	min-width: 3.25em;
-	width: 8%;
+}
+.w-logo[aria-hidden="true"] {
+	display: block;
 }
 .sub {
 	margin: 5vmin 0 5em 0;
@@ -212,6 +218,9 @@ img.work-ms {
 .sub {
 	padding: .5em clamp(.25em, 5vw, 2.5em ) .5em clamp(.25em, 5vw, 2.5em );
 }
+.post {
+	padding: .5em clamp(.25em, 5vw, 5em ) .5em clamp(.25em, 5vw, 5em );
+}
 .sublede {
 	padding-left: clamp(.25vw, 5.5vw, 6em );
 	min-height: 20em;
@@ -219,14 +228,21 @@ img.work-ms {
 }
 
 .site-foot {
-	border-top: 1px solid rgba(0,0,0,.2);
-	text-align: right;
 	clear: both;
-	padding: .75em 2em;
 	align-items: stretch;
 	max-width: 1200px;
-	margin: 5em auto 0 auto;
+	margin: 0 auto;
+	padding: 0 4vw 0 4vw; 
 }
+
+.post p {
+	max-width: 55em;
+}
+.site-foot {
+	border-top: 1px solid rgba(0,0,0,.2);
+	text-align: right;
+	margin-top: 5em;
+}	
 .site-meta {
 	text-align:left;
 }

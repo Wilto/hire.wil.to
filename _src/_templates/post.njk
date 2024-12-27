@@ -1,0 +1,17 @@
+
+{% extends "./base.njk" %}
+{% block inner %}
+<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+  <div class="body">
+    <div class="head">
+      <h1 class="hed txt-shaded">{{ title | safe }}</h1>
+      {% if lede %}
+      <p class="lede">{{ lede | safe }}</p>
+      {% endif %}
+    </div>
+    <div class="post">
+			{{ content | safe }}
+		</div>
+	</div>
+</main>
+{% endblock %}

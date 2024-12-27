@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: home.njk
 subhed: "My name is Mat “Wilto” Marquis, and I make websites."
 lede: "I’m an independent consultant. My specialization is inclusive web development."
 ---
