@@ -8,7 +8,7 @@ permalink: "/switching-to-a-framework-and-ubuntu/index.html"
 
 Okay, “man has, uses computer” doesn’t make for the most thrilling headline of all time; I get that.
 
-However, I also get the sense that I’m not the first and only dork to start entertaining the notion of _not_ splashing out thousands of dollars on a machine that feels increasingly disposable, just to use a platform that feels increasingly overbearing. So if you should ever find yourself in the same position I was about six months ago, with a tube of CA glue in one hand and tweezers semi-permanently affixed to the other, attempting to carefully glue a command key’s butterfly hinge back onto a machine with about an hour of battery life and a slowly expanding crack in the screen, really living the black-and-white, “there’s _got_ to be a _better way_” part of the infomercial—maybe there’s something of value in here for you.
+However, I also get the sense that I’m not the first and only dork to start entertaining the notion of _not_ splashing out thousands of dollars on a machine that feels increasingly disposable, just to use a platform that feels increasingly overbearing. So if you should ever find yourself in the same position I was about six months ago, with a tube of CA glue in one hand and tweezers semi-permanently affixed to the other, attempting to carefully glue a command key’s butterfly hinge back onto a machine with about an hour of battery life and a slowly expanding crack in the screen—really living the black-and-white, “there’s _got_ to be a _better way_” part of the infomercial—maybe there’s something of value in here for you.
 
 ## My whole deal
 
