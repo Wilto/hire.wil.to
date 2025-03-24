@@ -1,0 +1,573 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+<title>Spacing</title>
+<link rel="canonical" href="https://wil.to/equipped/design-system/spacing/">
+
+<meta property="og:site_name" content="GET EQUIPPED">
+<meta property="og:title" content="Spacing">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wil.to/equipped/design-system/spacing/">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://wil.to/equipped/images/card.gif">
+  <meta name="twitter:image" content="https://wil.to/equipped/images/card.gif">
+  <meta property="og:image:alt" content="GET EQUIPPED">
+  <meta name="twitter:image:alt" content="GET EQUIPPED">
+
+
+
+  <meta name="description" content="Spacing scales based on the size of the viewport.">
+  <meta name="twitter:description" content="Spacing scales based on the size of the viewport.">
+  <meta property="og:description" content="Spacing scales based on the size of the viewport.">
+
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/equipped/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/equipped/images/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="/equipped/images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="./css/global.css?39a6-d192-d353">
+
+    
+    
+      
+        <link rel="stylesheet" href="/css/design-system.css?39a6-d192-d353">
+      
+    
+  </head>
+  <body>
+    <a class="w-logo" href="https://wil.to">
+      <svg aria-hidden="true" viewBox="0 0 210 210" width="150" height="150" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs><path id="path" d="M.412.353h206.647V207H.412z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="path2" fill="#fff"><use xlink:href="#path"></use></mask><path d="M207.059 103.677c0 57.063-46.26 103.323-103.323 103.323C46.672 207 .412 160.74.412 103.677.412 46.613 46.672.353 103.736.353s103.323 46.26 103.323 103.324" fill="#12073F" mask="url(#path2)"></path><path fill="#eee0a2" d="M101.405 77.63H80.878L93.36 99.657l-5.579 9.812L69.614 77.63H49.087l38.578 68.359.08-.137.077.137 15.845-28.141 15.947 28.141 10.38-18.255z"></path><path fill="var(--color-secondary)" d="M137.823 77.647L125.55 99.23h20.65l12.183-21.425z"></path></g>
+      </svg>
+      <span class="visually-hidden">Wilto</span>
+    </a>
+    
+<main class="design-system sidebar">
+  <nav class="design-system__sidebar flow" aria-label="design system">
+    <p class="design-system__brand">
+      <a href="/design-system" aria-label="GET EQUIPPED Design System">
+      <svg class="w-logo" aria-hidden="true" viewBox="0 0 210 210" width="125" height="125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M.412.353h206.647V207H.412z"></path></defs><g fill="none" fill-rule="evenodd"><mask id="b" fill="#fff"><use xlink:href="#a"></use></mask><path id="w-bg" d="M207.059 103.677c0 57.063-46.26 103.323-103.323 103.323C46.672 207 .412 160.74.412 103.677.412 46.613 46.672.353 103.736.353s103.323 46.26 103.323 103.324" fill="#12073F" mask="url(#b)"></path><path id="w-fore" fill="#FFF" d="M101.405 77.63H80.878L93.36 99.657l-5.579 9.812L69.614 77.63H49.087l38.578 68.359.08-.137.077.137 15.845-28.141 15.947 28.141 10.38-18.255z"></path><path fill="#EF4136" d="M137.823 77.647L125.55 99.23h20.65l12.183-21.425z"></path></g></svg>
+    </a>
+    </p>
+    <div class="design-system__sidebar-inner">
+      
+        <h2 id="design-tokens">Design Tokens</h2>
+        <ul class="feature-nav" role="list">
+        
+          <li>
+
+  <a class="repel" href="/design-system/colors/">Color</a>
+
+   
+</li>
+        
+          <li>
+
+  <a class="repel" href="/design-system/typography/">Typography</a>
+
+   
+</li>
+        
+          <li>
+
+  <a class="repel" href="/design-system/spacing/" aria-current="page">
+    <span>Spacing</span>
+  </a>
+
+   
+</li>
+        
+        </ul>
+      
+        <h2 id="css">CSS</h2>
+        <ul class="feature-nav" role="list">
+        
+          <li>
+
+  <a class="repel" href="/design-system/css-compositions/">Layout Compositions</a>
+
+   
+</li>
+        
+          <li>
+
+  <a class="repel" href="/design-system/css-utilities/">Core utilties</a>
+
+   
+</li>
+        
+        </ul>
+      
+      <div class="repel pr-m items-baseline">
+        <h2 id="components">Components</h2>
+        <a class="button mt-[-1px]" href="/design-system/all-components/" data-type="badge">All</a>
+      </div>
+      <ul class="feature-nav" role="list">
+        
+          <li>
+
+  <a class="repel" href="/design-system/component/button/">Button</a>
+
+   
+</li>
+        
+          <li>
+
+  <a class="repel" href="/design-system/component/collapsible/">Collapsible</a>
+
+   
+</li>
+        
+      </ul>
+    </div>
+  </nav>
+  <div class="wrapper flow prose py-m">
+    <h1 id="spacing">Spacing</h1>
+    
+      Spacing scales based on the size of the viewport.
+    
+    
+
+<div class="wrapper py-m">
+  <div class="design-system__inner flow">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Scale</th>
+          <th>CSS Custom Property</th>
+          <th>Visualized Size</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th scope="row">3XS</th>
+            <td>4px – 5px</td>
+            <td><code>var(--space-3xs)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-3xs); height: var(--space-3xs)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">2XS</th>
+            <td>8px – 10px</td>
+            <td><code>var(--space-2xs)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-2xs); height: var(--space-2xs)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">XS</th>
+            <td>12px – 15px</td>
+            <td><code>var(--space-xs)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-xs); height: var(--space-xs)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">S</th>
+            <td>16px – 20px</td>
+            <td><code>var(--space-s)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-s); height: var(--space-s)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">M</th>
+            <td>24px – 30px</td>
+            <td><code>var(--space-m)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-m); height: var(--space-m)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">L</th>
+            <td>32px – 40px</td>
+            <td><code>var(--space-l)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-l); height: var(--space-l)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">XL</th>
+            <td>48px – 60px</td>
+            <td><code>var(--space-xl)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-xl); height: var(--space-xl)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">2XL</th>
+            <td>64px – 80px</td>
+            <td><code>var(--space-2xl)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-2xl); height: var(--space-2xl)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">3XL</th>
+            <td>96px – 120px</td>
+            <td><code>var(--space-3xl)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-3xl); height: var(--space-3xl)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">XS - S</th>
+            <td>12px – 20px</td>
+            <td><code>var(--space-xs-s)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-xs-s); height: var(--space-xs-s)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">S - M</th>
+            <td>16px – 30px</td>
+            <td><code>var(--space-s-m)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-s-m); height: var(--space-s-m)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">M - L</th>
+            <td>24px – 40px</td>
+            <td><code>var(--space-m-l)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-m-l); height: var(--space-m-l)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">L - XL</th>
+            <td>32px – 60px</td>
+            <td><code>var(--space-l-xl)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-l-xl); height: var(--space-l-xl)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">L - 2xl</th>
+            <td>32px – 80px</td>
+            <td><code>var(--space-l-2xl)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-l-2xl); height: var(--space-l-2xl)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">L - 3XL</th>
+            <td>32px – 120px</td>
+            <td><code>var(--space-l-3xl)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-l-3xl); height: var(--space-l-3xl)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">XL - 2XL</th>
+            <td>48px – 80px</td>
+            <td><code>var(--space-xl-2xl)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-xl-2xl); height: var(--space-xl-2xl)"></div>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">2XL - 3XL</th>
+            <td>64px – 120px</td>
+            <td><code>var(--space-2xl-3xl)</code></td>
+            <td class="design-system__space-visual">
+              <div class="bg-primary-shade" style="width: var(--space-2xl-3xl); height: var(--space-2xl-3xl)"></div>
+            </td>
+          </tr>
+        
+      </tbody>
+    </table>
+
+    <h4 id="custom-utility-classes">Custom Utility Classes</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Flow Space Utility</th>
+          <th>Gutter Utility</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <th scope="row">3XS</th>
+            <td>
+              <code>.flow-space-3xs</code>
+            </td>
+            <td>
+              <code>.gutter-3xs</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">2XS</th>
+            <td>
+              <code>.flow-space-2xs</code>
+            </td>
+            <td>
+              <code>.gutter-2xs</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">XS</th>
+            <td>
+              <code>.flow-space-xs</code>
+            </td>
+            <td>
+              <code>.gutter-xs</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">S</th>
+            <td>
+              <code>.flow-space-s</code>
+            </td>
+            <td>
+              <code>.gutter-s</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">M</th>
+            <td>
+              <code>.flow-space-m</code>
+            </td>
+            <td>
+              <code>.gutter-m</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">L</th>
+            <td>
+              <code>.flow-space-l</code>
+            </td>
+            <td>
+              <code>.gutter-l</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">XL</th>
+            <td>
+              <code>.flow-space-xl</code>
+            </td>
+            <td>
+              <code>.gutter-xl</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">2XL</th>
+            <td>
+              <code>.flow-space-2xl</code>
+            </td>
+            <td>
+              <code>.gutter-2xl</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">3XL</th>
+            <td>
+              <code>.flow-space-3xl</code>
+            </td>
+            <td>
+              <code>.gutter-3xl</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">XS - S</th>
+            <td>
+              <code>.flow-space-xs-s</code>
+            </td>
+            <td>
+              <code>.gutter-xs-s</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">S - M</th>
+            <td>
+              <code>.flow-space-s-m</code>
+            </td>
+            <td>
+              <code>.gutter-s-m</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">M - L</th>
+            <td>
+              <code>.flow-space-m-l</code>
+            </td>
+            <td>
+              <code>.gutter-m-l</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">L - XL</th>
+            <td>
+              <code>.flow-space-l-xl</code>
+            </td>
+            <td>
+              <code>.gutter-l-xl</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">L - 2xl</th>
+            <td>
+              <code>.flow-space-l-2xl</code>
+            </td>
+            <td>
+              <code>.gutter-l-2xl</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">L - 3XL</th>
+            <td>
+              <code>.flow-space-l-3xl</code>
+            </td>
+            <td>
+              <code>.gutter-l-3xl</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">XL - 2XL</th>
+            <td>
+              <code>.flow-space-xl-2xl</code>
+            </td>
+            <td>
+              <code>.gutter-xl-2xl</code>
+            </td>
+          </tr>
+        
+          <tr>
+            <th scope="row">2XL - 3XL</th>
+            <td>
+              <code>.flow-space-2xl-3xl</code>
+            </td>
+            <td>
+              <code>.gutter-2xl-3xl</code>
+            </td>
+          </tr>
+        
+      </tbody>
+    </table>
+
+    <h4 id="tailwind-provided-utility-classes">Tailwind-Provided Utility Classes</h4>
+
+    <p>The following utility classes are provided by <a href="https://tailwindcss.com/">Tailwind CSS</a>, which is incorporated into the build process for the sake of custom utility classes and processing design tokens. These utility classes will only be generated and included in the global stylesheet when used in markup.</p>
+
+    <p>While useful in some instances, we caution against relying on them as a default approach to general spacing for the sake of maintainability.</p>
+
+    <details>
+      <summary class="text-step-0 font-bold">Margin</summary>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>All sides</th>
+            <th>Vertical</th>
+            <th>Horizontal</th>
+            <th>Top</th>
+            <th>Right</th>
+            <th>Bottom</th>
+            <th>Left</th>
+            <th><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values/Basic_concepts_of_logical_properties_and_values">Logical</a> <code>padding-inline-start</code></th>
+            <th><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values/Basic_concepts_of_logical_properties_and_values">Logical</a> <code>padding-inline-end</code></th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </details>
+
+    <details>
+      <summary class="text-step-0 font-bold">Padding</summary>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>All sides</th>
+            <th>Vertical</th>
+            <th>Horizontal</th>
+            <th>Top</th>
+            <th>Right</th>
+            <th>Bottom</th>
+            <th>Left</th>
+            <th><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values/Basic_concepts_of_logical_properties_and_values">Logical start</a></th>
+            <th><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values/Basic_concepts_of_logical_properties_and_values">Logical End</a></th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </details>
+  </div>
+</div>
+
+  </div>
+</main>
+
+  </body>
+  <script type="module" src="./js/ui.js?39a6-d192-d353" defer=""></script>
+</html>

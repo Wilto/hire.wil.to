@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/js/collapsible.js", "../../src/js/bundle.js"],
-  "sourcesContent": ["/* Collapsible component. */\nexport default function() {\n  let details = document.querySelectorAll( \"details\" );\n\n  details.forEach( el => {\n    el.addEventListener( \"toggle\", e => {\n      let summary = e.target.querySelector( \"summary\" ),\n        detailEls = e.target.querySelectorAll( \":not(summary)\" )\n\n      detailEls.forEach( el => {\n        el.setAttribute( 'aria-hidden', !e.target.open );\n      });\n      summary.setAttribute( 'aria-expanded', e.target.open );\n    });\n\n    /* Disclosed elements should be hidden when `esc` is pressed. */\n    el.addEventListener( \"keyup\", e => {\n      if( e.key.toLowerCase() === \"escape\" ) {\n        e.target.closest( \"[open]\" ).removeAttribute( \"open\" );\n      }\n    });\n  });\n}", "// imports go here\nimport collapsible from './collapsible.js';\n\ncollapsible();\n"],
-  "mappings": ";;AACe,WAAR,sBAAmB;AACxB,QAAI,UAAU,SAAS,iBAAkB,SAAU;AAEnD,YAAQ,QAAS,QAAM;AACrB,SAAG,iBAAkB,UAAU,OAAK;AAClC,YAAI,UAAU,EAAE,OAAO,cAAe,SAAU,GAC9C,YAAY,EAAE,OAAO,iBAAkB,eAAgB;AAEzD,kBAAU,QAAS,CAAAA,QAAM;AACvB,UAAAA,IAAG,aAAc,eAAe,CAAC,EAAE,OAAO,IAAK;AAAA,QACjD,CAAC;AACD,gBAAQ,aAAc,iBAAiB,EAAE,OAAO,IAAK;AAAA,MACvD,CAAC;AAGD,SAAG,iBAAkB,SAAS,OAAK;AACjC,YAAI,EAAE,IAAI,YAAY,MAAM,UAAW;AACrC,YAAE,OAAO,QAAS,QAAS,EAAE,gBAAiB,MAAO;AAAA,QACvD;AAAA,MACF,CAAC;AAAA,IACH,CAAC;AAAA,EACH;;;ACnBA,sBAAY;",
-  "names": ["el"]
-}
