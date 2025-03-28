@@ -43,6 +43,8 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('admin/config.yml');
 	eleventyConfig.addPassthroughCopy('admin/previews.js');
 	eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
+
+	eleventyConfig.addPassthroughCopy('_redirects');
 	eleventyConfig.addPassthroughCopy('./megamanathon', 'megamanathon');
 
 	eleventyConfig.addFilter(
