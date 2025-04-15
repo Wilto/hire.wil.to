@@ -1,11 +1,9 @@
 ---
 pageClass: help
-title: "We’re all in this together."
+title: "I’m here to help."
 order: 4
 ---
 <div class="copy">
-
-If you’re here to help people, I’m here to help you.
 
 I’m immensely proud to have volunteered time to organizations like [Blaseball Cares](https://www.blaseballcares.com) (claws up) and [The Covid Tracking Project](https://covidtracking.com/)—groups working to make a real difference in peoples’ lives. 
 

@@ -26,6 +26,13 @@ img {
 	height: auto;
 }
 
+hr {
+	margin-block: 2em 1em;
+	opacity: .7;
+	border-color: inherit;
+	border-width: 1px 0 0 0;
+}
+
 a {
 	color: #cb4335;
 	transition: color .15s linear, -webkit-text-fill-color .15s linear, text-decoration-color .5s linear;

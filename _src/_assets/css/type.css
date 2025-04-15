@@ -146,17 +146,23 @@ h1+p, h2+p, h3+p, h4+p {
     margin-top: .5em;
 }
 
+
 .section-hed {
     font-size: 1.5em;
-    font-size: clamp( 1.5em, 4vw, 1.65em );
+    font-size: clamp( 1.5em, 4vw, 1.7em );
     padding-bottom: 0;
     margin-top: 1em;
     padding-top: .5em;
 }
 .copy h3 {
     font-size: 1.2em;
-    font-size: clamp( 1.1em, 3vw, 1.25em );
+    font-size: clamp( 1.1em, 3vw, 1.35em );
 }
+.copy h4 {
+    font-size: 1.2em;
+    font-size: clamp( 1em, 3vw, 1.25em );
+}
+
 
 
 h1.hed {
@@ -245,6 +251,45 @@ h1.hed {
     color: #6d252e;
 }
 
+.btn {
+    color: #fff;
+    display: inline-block;
+    background: #111;
+    margin-block-start: .75em;
+    padding: .675em 1em .4em 1em;
+    font-weight: bold;
+    font-family: AdelleSans, sans-serif;
+    text-decoration: none;
+    position: relative;
+    background: rgba(16, 9, 59, .85);
+}
+.btn:hover {
+    --active: 1;
+    color: #fff;
+    text-decoration: none;
+}
+.btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .btn::after {
+        border: 1px solid red;
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 2px;
+        background: radial-gradient(ellipse at calc(var(--x) * 1px) calc(var(--y) * 1px), #cb4335, transparent 15vmin);
+        background-attachment: fixed;
+        opacity: var(--active, 0);
+        transition: opacity 0.5s;
+        z-index: -1;
+    }
+}
+
 @media( prefers-color-scheme: dark ) {
  /* Hed/Subhed */
     h1, h2, h3, h4,
@@ -264,5 +309,8 @@ h1.hed {
     }
     svg #w-fore {
         fill: #fff;
+    }
+    .btn {
+        background: rgba(0,0,0,.8);
     }
 }

@@ -1,7 +1,7 @@
 ---
 pageClass: work-wanted
 title: "I want to build a better web."
-order: 3
+order: 2
 ---
 <div class="copy">
   

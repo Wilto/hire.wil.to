@@ -107,6 +107,12 @@
 
 				mm.addEventListener("change", setTheme );
 				setTheme( mm );
+
+				document.body.addEventListener('pointermove', ({ x, y }) => {
+					const doc = document.documentElement;
+						doc.style.setProperty( '--x', x );
+						doc.style.setProperty( '--y', y );
+					});
 			}());
 		</script>
 	</body>

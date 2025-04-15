@@ -1,6 +1,6 @@
 ---
 pageClass: work
-title: "I’ve helped build some websites."
+title: "I make websites."
 img: work.webp
 imgfallbk: work.png
 imgmask: work.gif
@@ -27,8 +27,8 @@ fullbleed: true
   I firmly believe that accessibility isn’t an add-on, a line item, or an ticket languishing in an issue tracker for “if we have time at the end.” It’s a persistent consideration through every step in the creation of a site—from content, to wireframes, to markup, to the final product. In the years that followed my accessibility work on the [jQuery UI and jQuery Mobile teams](https://jquery.org/team/), I’ve helped guide a number of organizations through the process of prioritizing accessibility both technically _and_ culturally.
 </div>
 <div class="illus">
-{% respimg "_src/img/rollingstone.jpg", "The RollingStone.com homepage.", "(min-width: 400px) 336px, calc(62.5vw + 99px)" %}
-{% respimg "_src/img/propublica.jpg", "An article page on Propublica.com.", "(min-width: 400px) 336px, calc(62.5vw + 99px)" %}
-{% respimg "_src/img/inquirer.jpg", "The Inquirer.com homepage.", "(min-width: 400px) 336px, calc(62.5vw + 99px)" %}
-{% respimg "_src/img/bond-as.jpg", "Homepage of a component library for an unspecified client.", "(min-width: 400px) 336px, calc(62.5vw + 99px)" %}
+{% respimg "_src/img/rollingstone.jpg", "The RollingStone.com homepage.", "auto" %}
+{% respimg "_src/img/propublica.jpg", "An article page on Propublica.com.", "auto" %}
+{% respimg "_src/img/inquirer.jpg", "The Inquirer.com homepage.", "auto" %}
+{% respimg "_src/img/bond-as.jpg", "Homepage of a component library for an unspecified client.", "auto" %}
 </div>
