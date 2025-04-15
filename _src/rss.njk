@@ -26,12 +26,12 @@ eleventyComputed:
   {%- for post in collections.posts | reverse %}
   {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
-    <title>{{ post.data.title | safe }}</title>
+    <title>{{ post.data.title | striptags(true) | escape }}</title>
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
-    {%- if post.data.page.excerpt %} 
-    <summary>{{ post.data.page.excerpt | striptags(true) | escape }}</summary>
+    {%- if post.data.lede %} 
+    <summary>{{ post.data.lede | striptags(true) | escape }}</summary>
     {%- else %}    
     <summary>{{ post.templateContent | striptags(true) | truncate(globals.posts.maximizeContent) | escape }}</summary>
     {%- endif %}
