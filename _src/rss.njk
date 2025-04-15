@@ -1,0 +1,40 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+eleventyComputed:
+    metadata:
+        title: '{{ globals.site.title | safe }}'
+        subtitle: '{{ globals.site.description | safe }}'
+        url: 'https://wil.to/'
+        author:
+            name: 'Mat Marquis'
+            email: ''
+        feedUrl: 'https://wil.to/feed.xml'
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  {%- if metadata.subtitle %}<subtitle>{{ metadata.subtitle }}</subtitle>{%- endif %}
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections[globals.posts.collectionName] | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    {%- if metadata.author.email %}<email>{{ metadata.author.email }}</email>{%- endif %}
+  </author>
+  {%- for post in collections.posts | reverse %}
+  {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    {%- if post.data.page.excerpt %} 
+    <summary>{{ post.data.page.excerpt | striptags(true) | escape }}</summary>
+    {%- else %}    
+    <summary>{{ post.templateContent | striptags(true) | truncate(globals.posts.maximizeContent) | escape }}</summary>
+    {%- endif %}
+  </entry>
+  {%- endfor %}
+</feed>

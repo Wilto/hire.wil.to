@@ -1,6 +1,7 @@
 const Image = require("@11ty/eleventy-img");
 const path = require('path')
 const CleanCSS = require('clean-css');
+const feedPlugin = require("@11ty/eleventy-plugin-rss");
 
 module.exports = function(eleventyConfig) {
 	async function imageShortcode(src, alt, sizes="100vw", cls="") {
@@ -38,6 +39,12 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addPassthroughCopy("_src/_assets/");
+  eleventyConfig.addPlugin(feedPlugin, {
+      posthtmlRenderOptions: {
+          closingSingleTag: "default" // opt-out of <img/>-style XHTML single tags
+      }
+  });
+
 
 	// Admin setup
 	eleventyConfig.addPassthroughCopy('admin/config.yml');
@@ -51,6 +58,7 @@ module.exports = function(eleventyConfig) {
 		'cssmin',
 		code => new CleanCSS({}).minify(code).styles
 	);
+
 
 	return {
 		templateFormats: [
