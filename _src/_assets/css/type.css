@@ -218,7 +218,7 @@ h1.hed {
 }
 .nav a {
     text-decoration: none;
-    color: #3c3d34;
+    color:: rgba(16, 9, 59, .85);
 }
 .nav a[aria-current],
 .nav a:hover {
@@ -231,7 +231,6 @@ h1.hed {
 .post-head:not(:first-of-type)::before {
     content: "";
     display: block;
-    margin-inline: auto;
     width: 25%;
     border-top: 1px solid rgba(0,0,0,.2);
 }
@@ -240,7 +239,6 @@ h1.hed {
     font-size: 2em;
     font-weight: normal;
     line-height: 1.65;
-
     max-width: 45em;
 }
 .post-head .hed a {
@@ -312,5 +310,11 @@ h1.hed {
     }
     .btn {
         background: rgba(0,0,0,.8);
+    }
+    .nav a {
+        color: #3c3d34;
+    }
+    .post-head .hed a {
+        color: #3c3d34;
     }
 }
