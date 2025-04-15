@@ -236,9 +236,9 @@ h1.hed {
 }
 .post-head .hed {
     font-family: Tiempos, serif;
-    font-size: 2em;
+    font-size: clamp( 1.7em, 4vw, 2em );
     font-weight: normal;
-    line-height: 1.65;
+    line-height: 1.2;
     max-width: 45em;
 }
 .post-head .hed a {
