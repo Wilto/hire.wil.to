@@ -3,8 +3,8 @@ permalink: feed.xml
 eleventyExcludeFromCollections: true
 eleventyComputed:
     metadata:
-        title: '{{ globals.site.title | safe }}'
-        subtitle: '{{ globals.site.description | safe }}'
+        title: '{{ data.title | safe }}'
+        subtitle: 'Sometimes I do a little writing.'
         url: 'https://wil.to/'
         author:
             name: 'Mat Marquis'
@@ -26,7 +26,7 @@ eleventyComputed:
   {%- for post in collections.posts | reverse %}
   {%- set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
   <entry>
-    <title>{{ post.data.title }}</title>
+    <title>{{ post.data.title | safe }}</title>
     <link href="{{ absolutePostUrl }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ absolutePostUrl }}</id>
