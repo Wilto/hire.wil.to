@@ -259,6 +259,8 @@ input {
     display: inline-block;
     transition: border-color .2s linear;
     margin-inline-end: 1rem;
+        margin-block-start: .5rem;
+
 }
 .input-wrap::after,
 .input-wrap::before {
@@ -286,7 +288,7 @@ input {
 }
 .input-wrap::before {
     border-width: 2px 0 0 2px;
-    left: -2px;
+    left: -2.1px;
     top: -2px;
 }
 .eyebrow {
@@ -300,7 +302,6 @@ input {
     font-family: Courier New, monospace;
     transition: outline .2s linear;
     font-size: 1rem;
-    margin-block-start: .5rem;
 }
 .input-wrap input:focus {
     outline: 2px solid rgba(0,0,0,.125);
