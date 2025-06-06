@@ -90,7 +90,7 @@ p.lede a {
    }
 }
 
-p {
+p, label {
     font-family: Tiempos, serif;
     font-size: .95em;
     line-height: 1.65;
@@ -248,22 +248,96 @@ h1.hed {
 .post-head .hed a:hover {  
     color: #6d252e;
 }
+.btn,
+input {
+    border: none;
+    padding: .675em 1em .4em 1em;
+    background: rgba(255,255,255,.8);
+}
+.input-wrap {
+    position: relative;
+    display: inline-block;
+    transition: border-color .2s linear;
+    margin-inline-end: 1rem;
+}
+.input-wrap::after,
+.input-wrap::before {
+  border: solid;
+  content: "";
+  height: 1rem;
+  position: absolute;
+  width: 1rem;
+  z-index: 0;
+  border-color: #4A4944;
+  transition: border-color .25s linear;
+}
+.input-wrap:has(input:invalid:not(:placeholder-shown))::before,
+.input-wrap:has(input:invalid:not(:placeholder-shown))::after {
+    border-color: #cb4335;
+}
+.input-wrap input::placeholder {
+    color: #999;
+}
 
+.input-wrap::after {
+    border-width: 0 2px 2px 0;
+    right: -2px;
+    bottom: -2px;
+}
+.input-wrap::before {
+    border-width: 2px 0 0 2px;
+    left: -2px;
+    top: -2px;
+}
+.eyebrow {
+    font-family: Courier New, monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.225em;
+    color: #4A4944;
+    font-size: .85rem;
+}
+.input-wrap input {
+    font-family: Courier New, monospace;
+    transition: outline .2s linear;
+    font-size: 1rem;
+    margin-block-start: .5rem;
+}
+.input-wrap input:focus {
+    outline: 2px solid rgba(0,0,0,.125);
+}
+input {
+    border-radius: 0;
+}
+input:invalid {
+    color: #cb4335;
+}
 .btn {
     color: #fff;
+    cursor: pointer;
     display: inline-block;
-    background: #111;
-    margin-block-start: .75em;
-    padding: .675em 1em .4em 1em;
+    background: #4A4944;
+    border: none;
+    border-radius: 3px;
     font-weight: bold;
-    font-family: AdelleSans, sans-serif;
+    font-size: 1.1rem;
+    font-family: Courier New, monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+    margin-block-start: .5rem;
     text-decoration: none;
     position: relative;
     background: rgba(16, 9, 59, .85);
+    outline: 2px dashed #333;
+    outline-offset: -2px;
+    transition: outline .2s linear, outline-offset .2s linear;
 }
+.btn:focus,
 .btn:hover {
     --active: 1;
     color: #fff;
+    outline: 2px dashed #cb4335;
+    outline-offset: 2px;
     text-decoration: none;
 }
 .btn::after {
@@ -275,7 +349,6 @@ h1.hed {
 }
 @media (prefers-reduced-motion: no-preference) {
     .btn::after {
-        border: 1px solid red;
         content: '';
         position: absolute;
         inset: 0;
@@ -309,7 +382,7 @@ h1.hed {
         fill: #fff;
     }
     .btn {
-        background: rgba(0,0,0,.8);
+        background: #4A4944;
     }
     .nav a {
         color: #3c3d34;
