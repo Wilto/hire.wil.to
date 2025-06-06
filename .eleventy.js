@@ -2,6 +2,8 @@ const Image = require("@11ty/eleventy-img");
 const path = require('path')
 const CleanCSS = require('clean-css');
 const feedPlugin = require("@11ty/eleventy-plugin-rss");
+const fetch = require('node-fetch');
+const { DateTime } = require("luxon");
 
 module.exports = function(eleventyConfig) {
 	async function imageShortcode(src, alt, sizes="100vw", cls="") {
@@ -59,6 +61,10 @@ module.exports = function(eleventyConfig) {
 		code => new CleanCSS({}).minify(code).styles
 	);
 
+  eleventyConfig.addFilter("formatDate", (dateObj) => {
+  	  const theDate = new Date( dateObj );
+      return DateTime.fromJSDate( theDate ).toLocaleString( DateTime.DATE_MED );
+  });
 
 	return {
 		templateFormats: [

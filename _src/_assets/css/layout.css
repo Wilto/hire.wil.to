@@ -40,6 +40,7 @@ main {
 main .body {
 	padding: 5% 0;
 	max-width: 90em;
+	width: 100%;
 	margin: 0 auto;
 }
 .nav {
