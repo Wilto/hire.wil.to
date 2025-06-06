@@ -329,7 +329,7 @@ input:invalid {
     text-decoration: none;
     position: relative;
     background: rgba(16, 9, 59, .85);
-    outline: 2px dashed #333;
+    outline: 2px dashed #4A4944;
     outline-offset: -2px;
     transition: outline .2s linear, outline-offset .2s linear;
 }
@@ -341,6 +341,10 @@ input:invalid {
     outline-offset: 2px;
     text-decoration: none;
 }
+.btn span {
+    position: relative;
+    z-index: 1;
+}
 .btn::after {
     content: '';
     position: absolute;
@@ -351,14 +355,13 @@ input:invalid {
 @media (prefers-reduced-motion: no-preference) {
     .btn::after {
         content: '';
-        position: absolute;
         inset: 0;
         border-radius: 2px;
-        background: radial-gradient(ellipse at calc(var(--x) * 1px) calc(var(--y) * 1px), #cb4335, transparent 15vmin);
+        background: radial-gradient(ellipse at calc(var(--x) * 1px) calc(var(--y) * 1px), #111, transparent 15vmin);
         background-attachment: fixed;
         opacity: var(--active, 0);
         transition: opacity 0.5s;
-        z-index: -1;
+        z-index: 0;
     }
 }
 

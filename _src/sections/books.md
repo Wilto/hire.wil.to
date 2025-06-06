@@ -30,7 +30,7 @@ I’m currently working on a new JavaScript course, paced for both aspiring and 
     <div class="input-wrap">
       <input id="email" type="email" name="email" autocapitalize="none" autocorrect="off" required="" placeholder="email@address.com">
     </div>
-    <button class="btn" data-button-variant="primary" type="submit">Sign up</button>
+    <button class="btn" data-button-variant="primary" type="submit"><span>Sign up</span></button>
   </div>
   <input type="hidden" name="stream" autocomplete="off" value="javascript-for-everyone">
 </form>
