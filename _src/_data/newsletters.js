@@ -1,3 +1,4 @@
+const fs = require('fs');
 const fetchCached = require( "@11ty/eleventy-fetch" );
 
 module.exports = async function() {
