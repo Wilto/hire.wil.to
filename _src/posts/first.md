@@ -3,6 +3,7 @@ templateClass: "blog"
 title: "The <s>year</s> couple months of Linux on the desktop."
 lede: "After spending my entire career on various MacsBook Pro, I’m now using a <a href='https://frame.work'>Framework 16</a> with Ubuntu."
 tags: "posts"
+date: 2024-10-11
 permalink: "/switching-to-a-framework-and-ubuntu/index.html"
 ---
 

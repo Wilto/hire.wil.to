@@ -4,6 +4,7 @@ title: "I set myself up an office."
 lede: "If you've seen me popping up on the internet somewhere recently—streaming or on a podcast or what-have-you—you may have wondered why it looks like I'm crammed in a closet someplace. The answer is that I'm crammed in a closet someplace."
 tags: "posts"
 permalink: "/the-cloffice/index.html"
+date: 2025-06-20
 ---
 
 As [briefly alluded to elsewhere](/switching-to-a-framework-and-ubuntu/), I've spent my whole career working like the subject of a stock photo: no external keyboard, mouse, monitor, anything—just me with a laptop perched on some non-work-dedicated surface, smiling into the middle distance and holding a forkful of salad.
