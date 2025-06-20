@@ -1,6 +1,6 @@
 ---
 templateClass: "blog"
-title: "I set myself up an office."
+title: "The Cloffice"
 lede: "If you've seen me popping up on the internet somewhere recently—streaming or on a podcast or what-have-you—you may have wondered why it looks like I'm crammed in a closet someplace. The answer is that I'm crammed in a closet someplace."
 tags: "posts"
 permalink: "/the-cloffice/index.html"
