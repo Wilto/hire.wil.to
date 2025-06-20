@@ -34,7 +34,7 @@
     <div>
     {% if newsletters %}
       <hr id="js4e">
-    <div class="js4e">
+    <div class="head js4e">
       <h1>
       <a href="https://piccalil.li/javascript-for-everyone">
   <span class="a11y-only">JavaScript for Everyone</span>
@@ -53,7 +53,7 @@
   <ol reversed class="sub js4e-index">
 {% for newsletter in newsletters | reverse %}
       <li class="post-head">
-        <h2 class="hed"><a href="https://piccalil.li/emails/{{ newsletter.slug }}">{{ newsletter.data.title }}</a></h2>
+        <h2 class="hed"><a href="https://piccalil.li/emails/{{ newsletter.slug }}">{{ newsletter.data.title |replace(" — JavaScript for Everyone", "")}}</a></h2>
         <p><time datetime="{{ newsletter.data.pubDate }}">{{ newsletter.data.pubDate | formatDate }}</time></p>
       </li>
 {% endfor %}
