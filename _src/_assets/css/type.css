@@ -419,3 +419,10 @@ input:invalid {
     color: #ef4136;
     margin-left: -1.25em;
 }
+
+figcaption {
+    opacity: .65;
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.4;
+}

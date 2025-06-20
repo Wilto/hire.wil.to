@@ -23,15 +23,14 @@
     <div class="sub">
       {% if collections.posts %}
       {% endif %}
-      {% for post in collections.posts %}
+      {% for post in collections.posts | reverse %}
         <div class="post-head">
           <h2 class="hed"><a href="{{ post.url }}">{{ post.data.title |safe}}</a></h2>
           <p>{{ post.data.lede | safe}}</p>
         </div>
       {% endfor %}
     </div>
-
-        {% if newsletters %}
+    {% if newsletters %}
       <hr id="js4e">
     <div class="sub js4e">
       <h1>

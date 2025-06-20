@@ -238,3 +238,32 @@ iframe {
 	margin-top: 1em;
 	max-width: 40em;
 }
+
+figure {
+	font-family: 'Tiempos', sans-serif;
+}
+
+@media( min-width: 40em ) {
+	figure {
+		margin-block: 2rem;
+		float: right;
+		max-width: 20rem;
+		clear: right;
+	}
+}
+
+@media( min-width: 65em ) {
+	figure {
+		padding: 0;
+		margin-block: .5rem;
+		margin-inline: 1.5rem 0;
+		float: right;
+		clear: right;
+		max-width: 20rem;
+	}
+	figure:nth-of-type(even) {
+		float: left;
+		clear: left;
+		margin-inline: 0 1.5rem;
+	}
+}

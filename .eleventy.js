@@ -9,9 +9,14 @@ module.exports = function(eleventyConfig) {
 	async function imageShortcode(src, alt, sizes="100vw", cls="") {
 		let metadata = await Image(src, {
 			formats: ["avif", "webp", "jpeg"],
-			widths: [800, 600, 400],
-			urlPath: "./img/",
+			widths: [1600, 1200, 800, 600, 400],
+			urlPath: "/img/",
+			quality: 100,
 			outputDir: "./_site/img/",
+			imgAttributes: {
+				loading: "lazy",
+				decoding: "async",
+			},
 			filenameFormat: function( id, src, width, format, options ) {
 				const ext = path.extname( src ),
 				name = path.basename( src, ext );
