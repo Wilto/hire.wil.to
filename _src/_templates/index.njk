@@ -18,9 +18,9 @@
       <h1 class="hed txt-shaded">{{ subhed | safe }}</h1>
       <p class="lede">{{ lede | safe }}</p>
     </div>
-    <div class="sub">
+    <div class="sub writingsub">
     {{ content | safe }}
-    <div class="sub">
+    <div class="sub blogsub">
       {% if collections.posts %}
       {% endif %}
       {% for post in collections.posts | reverse %}
@@ -30,9 +30,11 @@
         </div>
       {% endfor %}
     </div>
+    </div>
+    <div>
     {% if newsletters %}
       <hr id="js4e">
-    <div class="sub js4e">
+    <div class="js4e">
       <h1>
       <a href="https://piccalil.li/javascript-for-everyone">
   <span class="a11y-only">JavaScript for Everyone</span>
@@ -48,15 +50,18 @@
     </div>
     <input type="hidden" name="stream" autocomplete="off" value="javascript-for-everyone">
   </form>
+  <ol reversed class="sub js4e-index">
 {% for newsletter in newsletters | reverse %}
-      <div class="post-head">
+      <li class="post-head">
         <h2 class="hed"><a href="https://piccalil.li/emails/{{ newsletter.slug }}">{{ newsletter.data.title }}</a></h2>
         <p><time datetime="{{ newsletter.data.pubDate }}">{{ newsletter.data.pubDate | formatDate }}</time></p>
-      </div>
+      </li>
 {% endfor %}
+  </ol>
     </div>
 
 {% endif %}
+</div>
 
 
   </div>

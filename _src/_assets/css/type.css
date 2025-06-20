@@ -396,26 +396,9 @@ input:invalid {
     }
 }
 
-.js4e-logo {
-    display: block;
-    width: auto;
-    max-width: 100%;
-}
-
-.sub-books .js4e-logo {
-    margin-block-start: .5rem;
-    max-width: 18rem;
-}
-
-.js4e {
-    counter-reset: reversed(newsletter);
-}
-
-.js4e .hed::before {
+.js4e-index li::marker {
     font-family: monospace;
-    font-size: 1.25rem;
-    counter-increment: newsletter -1;
-    content: counter(newsletter)".";
+    font-size: 1.2rem;
     color: #ef4136;
     margin-left: -1.25em;
 }

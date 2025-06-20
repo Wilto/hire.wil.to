@@ -267,3 +267,26 @@ figure {
 		margin-inline: 0 1.5rem;
 	}
 }
+
+
+.js4e-logo {
+    display: block;
+    width: auto;
+    max-width: 100%;
+}
+
+.sub-books .js4e-logo {
+    margin-block-start: .5rem;
+    max-width: 18rem;
+}
+
+.sub.js4e-index {
+    margin-right: auto;
+}
+.sub.writingsub {
+	margin-block-start: 0;
+}
+
+.blogsub {
+    margin-block: 0 4rem;
+}
