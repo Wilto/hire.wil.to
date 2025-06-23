@@ -146,7 +146,19 @@ h1+p, h2+p, h3+p, h4+p {
     margin-top: .5em;
 }
 
-
+h1.hed.js4e {
+    margin: 2rem 0 0 0;
+}
+time {
+    display: block;
+    font-size: 1rem;
+    font-family: monospace;
+    opacity: .7;
+    margin-block: .3rem 2rem;
+}
+.js4e-logo-top {
+    max-width: 25rem;
+}
 .section-hed {
     font-size: 1.5em;
     font-size: clamp( 1.5em, 4vw, 1.7em );
@@ -259,8 +271,7 @@ input {
     display: inline-block;
     transition: border-color .2s linear;
     margin-inline-end: 1rem;
-        margin-block-start: .5rem;
-
+    margin-block: 0 .65rem;
 }
 .input-wrap::after,
 .input-wrap::before {
@@ -292,19 +303,22 @@ input {
     top: -2px;
 }
 .eyebrow {
+    display: block;
     font-family: Courier New, monospace;
     text-transform: uppercase;
     letter-spacing: 0.225em;
     color: #4A4944;
     font-size: .85rem;
+    margin-block: 1rem .125rem;
 }
 .input-wrap input {
+    width: 18rem;
     font-family: Courier New, monospace;
     transition: outline .2s linear;
     font-size: 1rem;
 }
 .input-wrap input:focus {
-    outline: 2px solid rgba(0,0,0,.125);
+    outline: 2px solid rgba(0,0,0,.25);
 }
 input {
     border-radius: 0;
@@ -332,6 +346,7 @@ input:invalid {
     outline: 2px dashed #4A4944;
     outline-offset: -2px;
     transition: outline .2s linear, outline-offset .2s linear;
+    margin-top: 0;
 }
 .btn:focus,
 .btn:hover {
@@ -408,4 +423,11 @@ figcaption {
     font-style: italic;
     font-size: 1rem;
     line-height: 1.4;
+}
+
+
+.js4e p.lede {
+    font-size: clamp( 1.2em, 4vw, 1.4em );
+    max-width: 90ch;
+    margin-block: .8ch;
 }

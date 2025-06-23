@@ -28,6 +28,7 @@
   "homepage": "https://hire.wil.to",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
     "@erquhart/rollup-plugin-node-builtins": "^2.1.5",
     "bl": "^3.0.0",
     "chokidar-cli": "^3.0.0",
@@ -42,7 +43,9 @@
     "grunt-contrib-watch": "^1.1.0",
     "grunt-critical": "^2.0.0",
     "grunt-responsive-images": "^1.10.1",
+    "install": "^0.13.0",
     "make-dir-cli": "^2.0.0",
+    "npm": "^11.4.2",
     "rollup": "^1.32.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
@@ -56,8 +59,6 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "fontfaceobserver": "^2.3.0",
     "fs": "^0.0.1-security",
-    "grunt-criticalcss": "^2.1.0",
-    "install": "^0.13.0",
-    "npm": "^11.4.1"
+    "grunt-criticalcss": "^2.1.0"
   }
 }

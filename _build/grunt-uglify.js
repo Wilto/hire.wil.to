@@ -4,7 +4,12 @@ module.exports = function(grunt) {
 	grunt.config( "uglify", {
 		sw: {
 			files: {
-				'_site/sw.js': ['_site/sw.js']
+				'_src/sw.js': ['_site/sw.js']
+			}
+		},
+		prism: {
+			files: {
+				'_src/prism.js': ['_site/prism.js']
 			}
 		}
 	});

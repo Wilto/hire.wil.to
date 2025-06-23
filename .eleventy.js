@@ -4,6 +4,8 @@ const CleanCSS = require('clean-css');
 const feedPlugin = require("@11ty/eleventy-plugin-rss");
 const fetch = require('node-fetch');
 const { DateTime } = require("luxon");
+const markdownIt = require("markdown-it");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function(eleventyConfig) {
 	async function imageShortcode(src, alt, sizes="100vw", cls="") {
@@ -36,7 +38,7 @@ module.exports = function(eleventyConfig) {
 	}
 
 	eleventyConfig.addAsyncShortcode("respimg", imageShortcode);
-
+	eleventyConfig.addPlugin(syntaxHighlight);
 	eleventyConfig.addCollection("sections", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
 			return item.inputPath.match(/^\.\/_src\/sections\//) !== null;
@@ -51,7 +53,6 @@ module.exports = function(eleventyConfig) {
           closingSingleTag: "default" // opt-out of <img/>-style XHTML single tags
       }
   });
-
 
 	// Admin setup
 	eleventyConfig.addPassthroughCopy('admin/config.yml');
@@ -70,6 +71,15 @@ module.exports = function(eleventyConfig) {
   	  const theDate = new Date( dateObj );
       return DateTime.fromJSDate( theDate ).toLocaleString( DateTime.DATE_MED );
   });
+
+	// Add within your config module
+	const md = new markdownIt({
+	  html: true,
+	});
+
+	eleventyConfig.addFilter("markdown", (content) => {
+  	return md.render(content);
+	});
 
 	return {
 		templateFormats: [
