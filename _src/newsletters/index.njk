@@ -9,7 +9,7 @@ permalink: "newsletters/{{ newsletter.slug }}/"
 {% set title = newsletter.data.title | replace(" — JavaScript for Everyone", "") %}
 {% set content = newsletter.body | markdown %}
 
-
+{%  set card = data.url + "/_assets/img/js4e-thumb.jpg" %}
 
 {% extends "../_templates/base.njk" %}
 

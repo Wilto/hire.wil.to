@@ -47,7 +47,8 @@
 		<meta property="og:title" content="{{ title or data.title }}">
 		<meta property="og:url" content="{{ data.url }}">
 		<meta property="og:description" content="{{ lede }}">
-		<meta property="og:image" content="{{ data.url }}/_assets/img/card.gif">
+		{% set defaultcard = data.url + "/_assets/img/card.gif" %}
+		<meta property="og:image" content="{{ card or defaultcard }}">
 		<meta property="og:image:alt" content="{{ data.description }}">
 
 		<meta name="author" content="{{ data.author.name }}">
