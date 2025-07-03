@@ -431,3 +431,10 @@ figcaption {
     max-width: 90ch;
     margin-block: .8ch;
 }
+
+blockquote {
+    border: 1px solid transparent;
+    border-left: 4px solid rgba(60,60,50, .5);
+    margin-inline-start: 0;
+    padding-inline-start: 1.75rem;
+}
