@@ -90,6 +90,8 @@ p.lede a {
    }
 }
 
+.post > ul,
+.post > ol,
 p, label {
     font-family: Tiempos, serif;
     font-size: .95em;
@@ -99,11 +101,15 @@ p, label {
 }
 
 @media( min-width: 30em ) {
+    .post > ul,
+    .post > ol,
     p {
         font-size: 3.2vw;
     }
 }
 @media( min-width: 37em ) {
+    .post > ul,
+    .post > ol,
     p {
         font-size: 1.1em;
     }
@@ -385,6 +391,7 @@ input:invalid {
     h1, h2, h3, h4,
     .section-hed,
     p.lede,
+    li,
     p {
         color: #3c3d34;
     }
@@ -437,4 +444,16 @@ blockquote {
     border-left: 4px solid rgba(60,60,50, .5);
     margin-inline-start: 0;
     padding-inline-start: 1.75rem;
+}
+
+.post strong {
+    font-weight: 700;
+}
+.post li strong {
+    font-weight: 600;
+    letter-spacing: .02rem;
+    font-family: AdelleSans, sans-serif;
+}
+.post li strong em {
+    font-style: normal;
 }
