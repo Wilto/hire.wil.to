@@ -457,3 +457,8 @@ blockquote {
 .post li strong em {
     font-style: normal;
 }
+
+.js4e-logo {
+    max-width: 25rem;
+    padding-block-end: .25rem;
+}
