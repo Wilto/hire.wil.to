@@ -2,7 +2,7 @@ const fs = require('fs');
 const fetchCached = require( "@11ty/eleventy-fetch" );
 
 module.exports = async function() {
-  const api = "https://piccalil.li/api/emails-archive?stream=javascript-for-everyone&rudebuster";
+  const api = "https://piccalil.li/api/emails-archive?stream=javascript-for-everyone&cachebust";
 
   const response = await fetchCached( api, {
     duration: "72h",

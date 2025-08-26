@@ -81,6 +81,8 @@ module.exports = function(eleventyConfig) {
   	return md.render(content);
 	});
 
+	eleventyConfig.addFilter( "newsletterSort", ( collection ) => collection.sort( ( a, b ) => new Date( b.data.pubDate ) - new Date( a.data.pubDate ) ) );
+
 	return {
 		templateFormats: [
 			"md",

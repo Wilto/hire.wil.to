@@ -300,7 +300,8 @@ figure {
     margin-block: 0 4rem;
 }
 
-.post p:first-of-type:has(a[href="https://piccalil.li/javascript-for-everyone"]) {
+.post p:first-of-type:has(a[href*="https://piccalil.li/javascript-for-everyone"]),
+.post p:first-of-type:has(a[href*="https://piccalilli.link"]) {
 	display: none;
 }
 
