@@ -46,7 +46,7 @@
 		<meta property="og:site_name" content="{{ data.name }}">
 		<meta property="og:title" content="{{ title or data.title }}">
 		<meta property="og:url" content="{{ data.url }}">
-		<meta property="og:description" content="{{ lede }}">
+		<meta property="og:description" content="{{ lede | striptags }}">
 		{% set defaultcard = data.url + "/_assets/img/card.gif" %}
 		<meta property="og:image" content="{{ card or defaultcard }}">
 		<meta property="og:image:alt" content="{{ data.description }}">
