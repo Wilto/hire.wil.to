@@ -59,6 +59,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "fontfaceobserver": "^2.3.0",
     "fs": "^0.0.1-security",
-    "grunt-criticalcss": "^2.1.0"
+    "grunt-criticalcss": "^2.1.0",
+    "listmonk": "^1.0.2"
   }
 }

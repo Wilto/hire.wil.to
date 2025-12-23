@@ -71,7 +71,7 @@ p.lede {
 }
 
 p.lede a {
-    text-decoration: none;
+    text-decoration-thickness: 1px;
 }
 .sublede p {
     font-size: 1.1em;
