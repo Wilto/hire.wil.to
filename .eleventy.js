@@ -60,6 +60,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy('node_modules/nunjucks/browser/nunjucks-slim.js');
 
 	eleventyConfig.addPassthroughCopy('static');
+	eleventyConfig.addPassthroughCopy('_src/robots.txt');
 
 	eleventyConfig.addPassthroughCopy('_redirects');
 	eleventyConfig.addPassthroughCopy('./megamanathon', 'megamanathon');
@@ -79,7 +80,7 @@ module.exports = function(eleventyConfig) {
 	  html: true,
 	});
 
-	eleventyConfig.addFilter("markdown", (content) => {
+	eleventyConfig.addFilter(	"markdown", (content) => {
   	return md.render(content);
 	});
 
