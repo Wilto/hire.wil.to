@@ -36,7 +36,7 @@ permalink: "newsletters/{{ newsletter.slug }}/"
           </a>
         <p class="lede">Welcome to the <a href="https://piccalil.li/javascript-for-everyone">JavaScript for Everyone</a> newsletter, a behind-the-scenes look at my work on a course designed to take your JavaScript skills from junior- to senior-level.</p>
         <hr>
-      <h1 class="hed js4e txt-shaded">{{ title | safe }}</h1>
+      <h1 class="hed js4e txt-shaded">{{ title | safe | replace( " - JavaScript for Everyone", "" )}}</h1>
       <time datetime="{{ newsletter.data.pubDate }}">{{ newsletter.data.pubDate | formatDate }}</time>
       {% if newsletter.data.pubDate %}
       {% endif %}

@@ -55,7 +55,7 @@
   <ol reversed class="sub js4e-index">
 {% for newsletter in newsletters | newsletterSort %}
       <li class="post-head">
-        <h2 class="hed"><a href="/newsletters/{{ newsletter.slug }}">{{ newsletter.data.title |replace(" — JavaScript for Everyone", "")}}</a></h2>
+        <h2 class="hed"><a href="/newsletters/{{ newsletter.slug }}">{{ newsletter.data.title |replace(" — JavaScript for Everyone", "") | replace( " - JavaScript for Everyone", "" )}}</a></h2>
         <time datetime="{{ newsletter.data.pubDate }}">{{ newsletter.data.pubDate | formatDate }}</time>
       </li>
 {% endfor %}
