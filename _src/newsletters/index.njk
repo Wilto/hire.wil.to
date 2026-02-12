@@ -37,8 +37,12 @@ permalink: "newsletters/{{ newsletter.slug }}/"
         <p class="lede">Welcome to the <a href="https://piccalil.li/javascript-for-everyone">JavaScript for Everyone</a> newsletter, a behind-the-scenes look at my work on a course designed to take your JavaScript skills from junior- to senior-level.</p>
         <hr>
       <h1 class="hed js4e txt-shaded">{{ title | safe | replace( " - JavaScript for Everyone", "" )}}</h1>
-      <time datetime="{{ newsletter.data.pubDate }}">{{ newsletter.data.pubDate | formatDate }}</time>
       {% if newsletter.data.pubDate %}
+        {% if title === "The Snows - JavaScript for Everyone" %}
+        <time datetime="2026-02-12T00:00:00.000Z">Feb 12, 2026</time>
+        {%  else %}
+        <time datetime="{{ newsletter.data.pubDate }}">{{ newsletter.data.pubDate | formatDate }}</time>
+        {% endif %}
       {% endif %}
     </div>
     <div class="post">
