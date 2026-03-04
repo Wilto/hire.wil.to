@@ -39,7 +39,7 @@ p {
 }
 main {
   background: #000;
-  box-shadow: .5rem .5rem 0 #000,-.25rem -.25rem 0 #000,-.25rem .5rem 0 #000,.5rem -.25rem 0 #000;
+  box-shadow: .5rem .5rem 0 #000, -.25rem -.25rem 0 #000, -.25rem .5rem 0 #000, .5rem -.25rem 0 #000;
 }
 main::after {
   background: #003ace;

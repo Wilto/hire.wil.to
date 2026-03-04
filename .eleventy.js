@@ -64,6 +64,7 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addPassthroughCopy('_redirects');
 	eleventyConfig.addPassthroughCopy('./megamanathon', 'megamanathon');
+	eleventyConfig.addPassthroughCopy('./megamanathon2', 'megamanathon2');
 
 	eleventyConfig.addFilter(
 		'cssmin',
