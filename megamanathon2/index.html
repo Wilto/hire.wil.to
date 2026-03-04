@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>GET EQUIPPED</title>
+    <link rel="canonical" href="https://wil.to/megamanathon2/">
+
+    <meta property="og:site_name" content="GET EQUIPPED with CHARITY STREAM">
+    <meta property="og:title" content="GET EQUIPPED">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wil.to/equipped/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://wil.to/megamanathon/images/card.png">
+    <meta name="twitter:image" content="https://wil.to/megamanathon/images/card.png">
+    <meta property="og:image:alt" content="GET EQUIPPED with CHARITY STREAM">
+    <meta name="twitter:image:alt" content="GET EQUIPPED with CHARITY STREAM">
+
+    <link rel="shortcut icon" href="./images/favicons/mm.gif">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- I wouldn't look too close, if I were you. -->
+    <link rel="stylesheet" href="./css/global.css?1df4-aede-b1b4">
+
+    <!-- That said: I broke the CRT effects out into a separate file, in case you're curious. -->
+    <link rel="stylesheet" href="./css/crt.css?1df4-aede-b1b4">
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">
+          
+        <main>
+          <div class="wrapper">
+            <div class="body">
+              <h1 class="hed">Megamanathon 2</h1>
+              <p class="type">Get your weapons ready!</p>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script>
+      !window.matchMedia( '(prefers-reduced-motion: reduce)' ).matches && (() => {
+        const type = document.querySelector(".type");
+        const text = type.innerText.split("").reverse();
+        const typer = () => {
+          setInterval( () => {
+            if( text.length ) {
+              type.append( text.pop() );
+            } else {
+              return false;
+            }
+          }, 150 );
+        };
+        type.innerHTML = "";
+
+        setTimeout( typer, 5000 );
+      })();
+ 
+</script>
+  </body>
+</html>
